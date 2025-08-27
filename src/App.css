@@ -1,1 +1,116 @@
 @import 'tailwindcss';
+
+/* Themes for app */
+@theme {
+    /* Color themes */
+    --color-base: #f1f1f1;
+    --color-primary: #F58A07;
+    --color-secondary: #359442;
+    --color-accent: #0b0b0b;
+    /* font size themes */
+    --text-x-small-size: 12px;
+    --text-small-size: 15px;
+    --text-medium-size: 17px;
+    --text-x-medium-size: 22px;
+    --text-large-size: 35px;
+    --text-x-large-size: 45px;
+    /* Font family themes */
+    --font-f-family-1: Georgia, 'Times New Roman', Times, serif;
+    --font-f-family-2: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* Spacing themes */
+    --spacing-x-small: 5px;
+    --spacing-small: 10px;
+    --spacing-medium: 15px;
+    --spacing-x-medium: 20px;
+    --spacing-large: 30px;
+    /* Borderradius themes */
+    --radius-small: 12px;
+    --radius-medium: 15px;
+    --radius-x-medium: 10px;
+}
+
+/* h1,
+h2,
+h3,
+h4 {
+    font-family: var(--font-f-family-2);
+} */
+
+body{
+  height: 100rem;
+  scroll-behavior: smooth;
+}
+
+@layer components {
+    .heading {
+        @apply text-x-medium-size font-normal pt-10 p-3
+    }
+    /* Navigations */
+    .navbar{
+        @apply w-full h-20 bg-gray-100 md:bg-white flex items-center justify-around md:gap-0 overflow-hidden fixed top-0 left-0
+    }
+    .navbar .navbar-navlink{
+      @apply text-small-size font-f-family-2 text-accent transition duration-150 ease-in cursor-pointer hover:text-gray-700
+    }
+    .bottom-navigation{
+      @apply w-full h-16 bg-gray-100 fixed bottom-0 left-0 md:hidden 
+    }
+    .bottom-navigation nav{
+      @apply w-full h-full p-2 flex items-center justify-center gap-15
+    }
+    .nav-link{
+      @apply flex flex-col items-center text-small-size font-f-family-2 text-accent hover:text-primary transition duration-300 ease-in
+    }
+    /* Hero section */
+    .hero-section{
+      @apply w-full h-full md:p-5 mt-20 flex items-center
+    }
+    .hero-section .hero-text-box{@apply w-full md:w-[50%] p-0 md:p-3 bg-[url('./assets/images/hero-image1')]}
+    .hero-text-box h1{@apply text-6xl md:text-6xl lg:text-8xl pb-1 md:pb-5 text-accent font-bold font-f-family-2}
+    .hero-text-box p{@apply text-small-size p-2 pb-2 md:pb-5 text-gray-700 font-f-family-2}
+    .hero-text-box .hero-cta{@apply text-small-size bg-accent text-white  border-1 border-accent font-f-family-2 font-bold hover:bg-transparent hover:text-accent transition duration-300 ease-in-out p-2 pl-8 pr-8 ml-2 rounded-full cursor-pointer}
+    .hero-section .hero-image-container{@apply w-[50%] h-full hidden md:flex}
+}
+
+
+
+
+
+/* Spinner styles */
+.loader {
+  margin: auto;
+  position: relative;
+  width: 64px;
+  height: 60px;
+}
+.loader::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #000000;
+  width: 64px;
+  height: 32px;
+  border-radius: 0 0 50px 50px;
+  animation: move 0.5s linear infinite alternate;
+}
+.loader::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  background: var(--color-accent);
+  width: 24px;
+  height: 24px;
+  transform: translateX(-50%) rotate(0deg);
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  100% { transform: translateX(-50%) rotate(360deg)}
+}
+@keyframes move {
+  0% { transform: rotate(10deg)}
+  100% { transform: rotate(-10deg)}
+}
+      
