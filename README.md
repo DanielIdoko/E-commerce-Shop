@@ -1,1 +1,2 @@
-#Full React Ecommerce Application with React + Rapid API + axios + TailwindCSS + MUI 
+# Full React Ecommerce Application with React + Rapid API + axios + TailwindCSS 
+Scope of Application
