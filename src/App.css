@@ -1,5 +1,23 @@
 @import 'tailwindcss';
 
+
+.open-sans-font {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
+.playwrite-ca-font {
+  font-family: "Playwrite CA", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
 /* Themes for app */
 @theme {
     /* Color themes */
@@ -8,15 +26,15 @@
     --color-secondary: #359442;
     --color-accent: #0b0b0b;
     /* font size themes */
-    --text-x-small-size: 12px;
-    --text-small-size: 15px;
-    --text-medium-size: 17px;
+    --text-x-small-size: 11px;
+    --text-small-size: 14px;
+    --text-medium-size: 16px;
     --text-x-medium-size: 22px;
     --text-large-size: 35px;
     --text-x-large-size: 45px;
     /* Font family themes */
-    --font-f-family-1: Georgia, 'Times New Roman', Times, serif;
-    --font-f-family-2: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --font-f-family-1: "Playwrite CA", cursive;
+    --font-f-family-2: "Open Sans", sans-serif;
     /* Spacing themes */
     --spacing-x-small: 5px;
     --spacing-small: 10px;
@@ -47,13 +65,13 @@ body{
     }
     /* Navigations */
     .navbar{
-        @apply w-full h-20 bg-gray-100 md:bg-white flex items-center justify-around md:gap-0 overflow-hidden fixed top-0 left-0
+        @apply w-full h-20 bg-gray-100 md:bg-white flex items-center justify-around md:gap-0 lg:gap-6 overflow-hidden fixed top-0 left-0 z-50
     }
     .navbar .navbar-navlink{
       @apply text-small-size font-f-family-2 text-accent transition duration-150 ease-in cursor-pointer hover:text-gray-700
     }
     .bottom-navigation{
-      @apply w-full h-16 bg-gray-100 fixed bottom-0 left-0 md:hidden 
+      @apply w-full h-16 bg-gray-100 fixed bottom-0 left-0 md:hidden z-50 
     }
     .bottom-navigation nav{
       @apply w-full h-full p-2 flex items-center justify-center gap-15
@@ -61,15 +79,29 @@ body{
     .nav-link{
       @apply flex flex-col items-center text-small-size font-f-family-2 text-accent hover:text-primary transition duration-300 ease-in
     }
-    /* Hero section */
+    /* Hero */
     .hero-section{
-      @apply w-full h-full md:p-5 mt-20 flex items-center
+      @apply w-full h-full md:p-5 mt-20 flex items-center flex-col md:flex-row
     }
-    .hero-section .hero-text-box{@apply w-full md:w-[50%] p-0 md:p-3 bg-[url('./assets/images/hero-image1')]}
-    .hero-text-box h1{@apply text-6xl md:text-6xl lg:text-8xl pb-1 md:pb-5 text-accent font-bold font-f-family-2}
-    .hero-text-box p{@apply text-small-size p-2 pb-2 md:pb-5 text-gray-700 font-f-family-2}
-    .hero-text-box .hero-cta{@apply text-small-size bg-accent text-white  border-1 border-accent font-f-family-2 font-bold hover:bg-transparent hover:text-accent transition duration-300 ease-in-out p-2 pl-8 pr-8 ml-2 rounded-full cursor-pointer}
-    .hero-section .hero-image-container{@apply w-[50%] h-full hidden md:flex}
+    .hero-section .hero-text-box{@apply w-full md:w-[50%] p-0 md:p-3 }
+    .hero-text-box h1{@apply text-2xl md:text-6xl lg:text-8xl p-2 pb-1 md:pb-5 text-accent font-bold font-f-family-2}
+    .hero-text-box p{@apply text-x-small-size p-2 pb-2 md:pb-5 text-gray-700 font-f-family-2}
+    .hero-section .hero-image-container{@apply w-[50%] h-full md:flex}
+    /* Categories */
+    .categories-section{@apply w-full h-full mt-10}
+    .home-category{@apply w-20 h-22 md:w-52 md:h-52 lg:w-[200px] lg:h-72  flex flex-col items-center justify-center cursor-pointer}
+    .home-category img{@apply w-full h-18 md:h-45 lg:h-66 rounded-md object-cover}
+    .home-category p{@apply text-x-small-size pt-2 md:text-small-size text-accent font-f-family-2}
+    /* Deals section */
+    .best-deals-section{@apply w-full h-fit mt-10 p-2 }
+    /* Brands section */
+    .brands-list{@apply w-full p-1 md:p-10 lg:p-10 grid grid-rows-4 grid-cols-2 md:grid-rows-3 md:grid-cols-3 lg:grid-rows-2 lg:grid-cols-4 gap-3}
+    /* Discount section */
+    .discount-section{@apply w-full p-3 lg:p-10}
+    .discounts-row{@apply w-full p-0 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 grid-rows-2 lg:grid-rows-1 gap-5}
+    /* Best sellers section */
+    .best-sellers-section{@apply w-full p-3 lg:p-10 mt-6 pb-10}
+    .best-sellers-section nav{@apply w-full h-fit p-2 flex items-center justify-center-safe md:justify-start gap-3 md:gap-6 bg-inherit overflow-auto}
 }
 
 
@@ -99,7 +131,7 @@ body{
   position: absolute;
   left: 50%;
   top: 0;
-  background: var(--color-accent);
+  background: var(--color-primary);
   width: 24px;
   height: 24px;
   transform: translateX(-50%) rotate(0deg);

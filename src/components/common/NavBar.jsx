@@ -9,12 +9,12 @@ const NavBar = () => {
     <header className="navbar">
       <Link
         to="/"
-        className="text-x-medium-size text-accent font-f-family-1 font-normal"
+        className="text-small-size text-accent rounded-full font-f-family-1 font-normal"
       >
         Flix Shop
       </Link>
 
-      <nav className="w-[270px] h-full hidden md:flex items-center justify-around gap-5 md:ml-40">
+      <nav className="w-[270px] h-full hidden md:flex items-center justify-around gap-5 md:ml-4 lg:ml-40">
         <NavLink to="/" className="navbar-navlink" style={({isActive}) => ({
           color: isActive ? "#DD8B26" : "#555"
         })}>
@@ -36,13 +36,13 @@ const NavBar = () => {
           What's New
         </NavLink>
       </nav>
-      <div className="h-fit w-56 md:w-[300px] flex justify-center items-center relative">
+      <div className="h-fit w-56 md:w-[100px] lg:w-[300px] flex justify-center items-center relative">
         <input
           type="search"
           placeholder="Search..."
           className="bg-transparent w-full h-full p-2 rounded-full text-accent focus:outline-1 font-f-family-2 text-small-size"
         />
-        <FiSearch className="text-small-size text-accent relative right-8 cursor-pointer hover:text-gray-500 transition duration-300 ease-in-out" />
+        <FiSearch className="text-small-size text-accent relative right-8 md:right-0 lg:right-8 cursor-pointer hover:text-gray-500 transition duration-300 ease-in-out" />
       </div>
       <div className="hidden md:flex items-center justify-center w-fit h-full">
         <Link
