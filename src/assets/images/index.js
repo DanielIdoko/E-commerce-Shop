@@ -1,3 +1,5 @@
+import logo from './logo.png'
+// Hero images
 import heroImage from './heroImage.png'
 import heroImage2 from './hero-image-2.png'
 import heroImage3 from './hero-image-3.png'
@@ -27,6 +29,7 @@ import furniture from './furniture.png'
 import book from './book.png'
 
 export {
+    logo,
     heroImage,
     heroImage2,
     heroImage3,
