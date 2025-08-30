@@ -4,6 +4,7 @@ import {
   beauty,
   office,
   appliances,
+  appliances2,
   travel,
   brand1,
   brand2,
@@ -32,21 +33,16 @@ const categoriesData = [
   },
   {
     id: "003",
-    title: "Beauty and Personal Care",
+    title: "Beauty",
     category_image: beauty,
   },
   {
     id: "004",
     title: "Electronics",
-    category_image: electronics,
+    category_image: appliances2,
   },
   {
     id: "005",
-    title: "Books",
-    category_image: books,
-  },
-  {
-    id: "006",
     title: "Travel",
     category_image: travel,
   },

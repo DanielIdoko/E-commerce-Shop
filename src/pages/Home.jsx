@@ -31,7 +31,7 @@ import {
   bestCategories,
   brands,
 } from "../data/common";
-import { heroImage } from "../assets/images";
+import { heroImage, logo } from "../assets/images";
 
 // Deal component
 const Deal = ({ deal }) => {
@@ -47,7 +47,7 @@ const Deal = ({ deal }) => {
       </span>
       {/* Text container */}
       <div className="w-full h-fit pt-2">
-        <h3 className="text-medium-size text-accent font-f-family-2">
+        <h3 className="text-medium-size text-accent font-f-family-2 font-bold">
           {deal.deal_title.length > 15
             ? deal.deal_title.slice(0, 20) + "..."
             : deal.deal_title}
@@ -59,7 +59,7 @@ const Deal = ({ deal }) => {
           {deal.deal_state ? deal.deal_state : "OUT OF STOCK"}
         </span>
       </div>
-      <button className="bg-transparent text-accent border-1 border-accent flex items-center justify-center p-1 pl-2 pr-2 w-full lg:w-fit rounded-full mt-3 cursor-pointer hover:bg-primary hover:border-primary hover:text-white transition duration-150 ease-in">
+      <button className="bg-transparent text-accent  flex items-center justify-center p-1 pl-2 pr-2 w-full lg:w-fit rounded-full mt-3 cursor-pointer hover:bg-primary hover:border-primary hover:text-white transition duration-150 ease-in">
         Add to Cart
       </button>
     </div>
@@ -100,23 +100,25 @@ const Brand = ({ brand }) => {
 // Discount component
 const Discount = ({ discount_data }) => {
   return (
-    <div className="w-44 h-70 md:w-50 md:h-86 lg:w-2xs lg:h-86 p-0 md:p-0 rounded-xl bg-orange-50 md:bg-orange-100 cursor-pointer transfrom hover:scale-100 transition duration-300">
+    <div className="w-44 h-70 md:w-50 md:h-70 lg:w-2xs lg:h-86 p-0 md:p-0 rounded-xl bg-orange-50 md:bg-orange-100 cursor-pointer overflow-hidden">
       <div className="h-[40%] w-full p-2">
-        <p className="text-small-size md:text-x-medium-size font-bold font-f-family-2">
+        <p className="text-small-size md:text-small-size font-bold font-f-family-2">
           Save
         </p>
-        <p className="text-medium-size md:text-large-size font-bold text-green-800 pl-1 pt-1">
+        <p className="text-medium-size md:text-x-medium-size font-bold text-green-800 pl-1 pt-1">
           ${discount_data.price}
         </p>
-        <p className="text-gray-600 text-x-small-size font-bold font-f-family-2 pt-2 md:pt-1">
+        <p className="text-accent text-x-small-size md:text-small-size font-f-family-2 pt-2 md:pt-1">
           {discount_data.title}
         </p>
       </div>
-      <img
-        src={discount_data.image}
-        className="h-[60%] w-full rounded-bl-xl rounded-br-xl"
-        alt={discount_data.title}
-      />
+      <div className="w-full h-fit overflow-hidden">
+        <img
+          src={discount_data.image}
+          className="h-[60%] w-full rounded-bl-xl rounded-br-xl"
+          alt={discount_data.title}
+        />
+      </div>
     </div>
   );
 };
@@ -125,10 +127,10 @@ const Home = () => {
   const [deals, setDeals] = useState([]);
   // Filter category states
   const [loading, setIsloading] = useState(true);
-  const [filterCategory, setFilterCategory] = useState("Software");
+  const [filterCategory, setFilterCategory] = useState("Beauty");
   const [filterData, setFilterData] = useState([]);
 
-  // code to filter categories
+  // code to filter data by category
   const filterCategories = (category_title) => {
     // Return a new array, store in a variable and set that new fitered data as the new filterData
     if (category_title) {
@@ -163,9 +165,7 @@ const Home = () => {
 
       {/* Categories section */}
       <section className="categories-section">
-        <h2 className="text-medium-size font-f-family-2 p-3 md:pl-10">
-          Explore our Categories
-        </h2>
+        <h2 className="sub-heading">Explore our Categories</h2>
         <div className="w-full h-fit p-3 lg:p-10 grid grid-cols-4 grid-rows-2 md:grid-rows-2 md:grid-cols-3 lg:grid-cols-5 lg:grid-rows-2 gap-4 md:gap-2">
           {categoriesData.map((category) => (
             <Category key={category.id} categoryData={category} />
@@ -175,9 +175,7 @@ const Home = () => {
       {/* End of category section */}
       {/* Best deals section */}
       <section className="best-deals-section">
-        <h2 className="text-medium-size font-f-family-2 pb-4 md:pl-10">
-          Today's best deals for you
-        </h2>
+        <h2 className="sub-heading">Today's best deals for you</h2>
         {/* Deals */}
         <Suspense fallback={<Spinner />}>
           <div className="w-full h-full lg:p-10">
@@ -210,9 +208,7 @@ const Home = () => {
       {/* End of deals section */}
       {/* Brands_container */}
       <section className="brands-container">
-        <h3 className="text-medium-size font-f-family-2 pb-4 md:pl-10">
-          Choose By Brands
-        </h3>
+        <h3 className="sub-heading">Choose By Brands</h3>
         <div className="brands-list">
           {brands.map((brand) => (
             <Brand brand={brand} key={brand.id} />
@@ -221,10 +217,8 @@ const Home = () => {
       </section>
       {/* End of brands */}
       {/* Discount section starts */}
+      <h3 className="sub-heading">Get up to 60% off</h3>
       <section className="discount-section">
-        <h3 className="text-medium-size font-f-family-2 pb-4">
-          Get up to 60% off
-        </h3>
         <div className="discounts-row">
           {discounts.map((discount) => (
             <Discount discount_data={discount} key={discount.id} />
@@ -232,15 +226,15 @@ const Home = () => {
         </div>
       </section>
       {/* End of discount section */}
+      <h3 className="sub-heading">Best Sellers</h3>
       <section className="best-sellers-section">
-        <h3 className="text-medium-size font-f-family-2 pb-2">Best Sellers</h3>
         <nav>
           {bestCategories.map((category) => (
             <button
-              className="p-2 bg-transparent text-accent border-1 border-gray-400 font-bold font-f-family-2 text-x-small-size md:text-small-size cursor-pointer rounded-full"
+              className="p-2 md:pl-3 md:pr-3 bg-transparent text-accent font-f-family-2 text-x-small-size md:text-small-size cursor-pointer rounded-full"
               style={{
                 backgroundColor: category.title === filterCategory && "#0b0b0b",
-                color: category.title === filterCategory && "#fff",
+                color: category.title === filterCategory ? "#fff" : "#aaa",
                 border: category.title === filterCategory && "#0b0b0b",
               }}
               key={category.id}
@@ -255,10 +249,10 @@ const Home = () => {
         </nav>
 
         {/* main content */}
-        <div className="w-full h-full grid grid-cols-2 md:-grid-cols-4 lg:grid-cols-4 gap-2 pt-10">
+        <div className="w-full h-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 pt-10">
           {filterData.map((Fdata) => (
             <div
-              className="w-40 h-88 md:w-55 lg:w-80 rounded-md bg-none relative cursor-pointer transition duration-200 ease-in"
+              className="w-40 h-88 md:w-55 lg:w-80 rounded-md bg-none relative hover:shadow-sm hover:shadow-gray-300 transition duration-300 ease-in cursor-pointer"
               key={Fdata.asin}
             >
               <img
@@ -268,13 +262,10 @@ const Home = () => {
                     : "../assets/images/PosterImage.png"
                 }
                 alt={Fdata.product_title + " image"}
-                className="w-full h-42 pb-1 object-cover"
+                className="w-full h-42 pb-1 object-contain"
               />
-              <span className="text-small-size text-accent bg-orange-200 p-1 pl-3 pr-3 rounded-md absolute top-1 left-10">
-                {Fdata.rank ? Fdata.rank : 20}
-              </span>
               {/* Text container */}
-              <div className="w-full h-fit pt-2 md:p-2">
+              <div className="w-full h-fit pt-2 md:p-2 mt-4">
                 <h3 className="text-medium-size text-accent font-f-family-2 font-bold p-1">
                   {Fdata.product_title.length > 15
                     ? Fdata.product_title.slice(0, 25) + "..."
@@ -282,7 +273,7 @@ const Home = () => {
                 </h3>
 
                 <div className="w-full h-fit p-1 flex items-center justify-start gap-2">
-                    <p className="text-small-size md:text-medium-size text-gray-500 flex-1">
+                  <p className="text-small-size md:text-medium-size text-gray-500 flex-1">
                     {Fdata.product_price}
                   </p>
                   <span className="text-x-small-size md:text-medium-size text-yellow-500">
@@ -293,7 +284,7 @@ const Home = () => {
                   </span>
                 </div>
               </div>
-                <button className="bg-transparent text-accent border-1 border-accent flex items-center justify-center p-1 pl-2 pr-2 w-full lg:w-fit rounded-full mt-3 ml-2 md:ml-3 cursor-pointer hover:bg-primary hover:border-primary hover:text-white transition duration-150 ease-in">
+              <button className="bg-transparent text-accent flex items-center justify-center p-1 pl-2 pr-2 md:p-2 md:pl-3 md:pr-3 w-full lg:w-fit rounded-full mt-5 ml-2 md:ml-3 cursor-pointer hover:bg-orange-900 hover:border-orange-900 hover:text-white transition duration-150 ease-in">
                 Add to Cart
               </button>
             </div>

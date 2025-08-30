@@ -1,6 +1,7 @@
 import React from "react";
 import { FiSearch, FiShoppingCart } from "react-icons/fi";
 import { Link, NavLink, useNavigate } from "react-router-dom";
+import { logo } from "../../assets/images";
 
 const NavBar = () => {
   const navigate = useNavigate();
@@ -11,28 +12,44 @@ const NavBar = () => {
         to="/"
         className="text-small-size text-accent rounded-full font-f-family-1 font-normal"
       >
-        Flix Shop
+        <img src={logo} alt="Logo image" className="w-10 h-10 rounded-full" />
       </Link>
 
       <nav className="w-[270px] h-full hidden md:flex items-center justify-around gap-5 md:ml-4 lg:ml-40">
-        <NavLink to="/" className="navbar-navlink" style={({isActive}) => ({
-          color: isActive ? "#DD8B26" : "#555"
-        })}>
+        <NavLink
+          to="/"
+          className="navbar-navlink"
+          style={({ isActive }) => ({
+            color: isActive ? "#DD8B26" : "#555",
+          })}
+        >
           Home
         </NavLink>
-        <NavLink to="/about" className="navbar-navlink" style={({isActive}) => ({
-          color: isActive ? "#DD8B26" : "#555"
-        })}>
+        <NavLink
+          to="/about"
+          className="navbar-navlink"
+          style={({ isActive }) => ({
+            color: isActive ? "#DD8B26" : "#555",
+          })}
+        >
           About
         </NavLink>
-        <NavLink to="/products" className="navbar-navlink" style={({isActive}) => ({
-          color: isActive ? "#DD8B26" : "#555"
-        })}>
+        <NavLink
+          to="/products"
+          className="navbar-navlink"
+          style={({ isActive }) => ({
+            color: isActive ? "#DD8B26" : "#555",
+          })}
+        >
           Store
         </NavLink>
-        <NavLink to="/deals" className="navbar-navlink" style={({isActive}) => ({
-          color: isActive ? "#DD8B26" : "#555"
-        })}>
+        <NavLink
+          to="/deals"
+          className="navbar-navlink"
+          style={({ isActive }) => ({
+            color: isActive ? "#DD8B26" : "#555",
+          })}
+        >
           What's New
         </NavLink>
       </nav>
