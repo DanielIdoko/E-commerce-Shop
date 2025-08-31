@@ -1,11 +1,4 @@
-import React, {
-  lazy,
-  Suspense,
-  useCallback,
-  useEffect,
-  useMemo,
-  useState,
-} from "react";
+import React, { Suspense, useEffect, useState } from "react";
 // import Swiper core and required modules
 import {
   Navigation,
@@ -30,26 +23,33 @@ import {
   discounts,
   bestCategories,
   brands,
+  faqs,
 } from "../data/common";
-import { heroImage, logo } from "../assets/images";
+import { heroImage, cards, faq1, faq2, faq3 } from "../assets/images";
+import Footer from "../components/common/Footer";
+import { AiOutlineArrowRight } from "react-icons/ai";
 
 // Deal component
 const Deal = ({ deal }) => {
   return (
-    <div className="w-40 h-88 md:w-55 lg:w-90 rounded-md p-1.5 bg-white relative cursor-pointer transition duration-200 ease-in">
+    <Link
+      to={`/product/${deal.product_asin}`}
+      state={{ deal }}
+      className="w-40 h-88 md:w-55 lg:w-90 rounded-md p-1.5 relative cursor-pointer transition duration-200 ease-in"
+    >
       <img
         src={deal.deal_photo}
         alt={deal.deal_title}
         className="w-full h-42 pb-1 object-contain"
       />
-      <span className="text-x-small-size text-accent bg-orange-200 p-1 rounded-md absolute top-1 left-1">
+      <span className="text-x-small-size text-accent w-13 bg-orange-200 p-1 rounded-md absolute top-3 left-1">
         {deal.deal_badge ? deal.deal_badge : "10% off"}
       </span>
       {/* Text container */}
       <div className="w-full h-fit pt-2">
         <h3 className="text-medium-size text-accent font-f-family-2 font-bold">
           {deal.deal_title.length > 15
-            ? deal.deal_title.slice(0, 20) + "..."
+            ? deal.deal_title.slice(0, 16) + "..."
             : deal.deal_title}
         </h3>
         <p className="text-small-size text-gray-500">
@@ -59,10 +59,10 @@ const Deal = ({ deal }) => {
           {deal.deal_state ? deal.deal_state : "OUT OF STOCK"}
         </span>
       </div>
-      <button className="bg-transparent text-accent  flex items-center justify-center p-1 pl-2 pr-2 w-full lg:w-fit rounded-full mt-3 cursor-pointer hover:bg-primary hover:border-primary hover:text-white transition duration-150 ease-in">
+      <button className="bg-primary text-accent  flex items-center justify-center p-1 pl-2 pr-2 md:p-2 md:pl-3 md:pr-3 w-full lg:w-fit rounded-full mt-3 cursor-pointer transition duration-150 ease-in">
         Add to Cart
       </button>
-    </div>
+    </Link>
   );
 };
 
@@ -100,15 +100,15 @@ const Brand = ({ brand }) => {
 // Discount component
 const Discount = ({ discount_data }) => {
   return (
-    <div className="w-44 h-70 md:w-50 md:h-70 lg:w-2xs lg:h-86 p-0 md:p-0 rounded-xl bg-orange-50 md:bg-orange-100 cursor-pointer overflow-hidden">
+    <div className="w-44 h-70 md:w-50 md:h-70 lg:w-2xs lg:h-86 p-0 md:p-0 rounded-xl bg-gray-50 cursor-pointer overflow-hidden">
       <div className="h-[40%] w-full p-2">
-        <p className="text-small-size md:text-small-size font-bold font-f-family-2">
+        <p className="text-small-size text-red-600 md:text-small-size font-bold font-f-family-2">
           Save
         </p>
-        <p className="text-medium-size md:text-x-medium-size font-bold text-green-800 pl-1 pt-1">
+        <p className="text-medium-size md:text-x-medium-size font-bold text-accent pl-1 pt-1">
           ${discount_data.price}
         </p>
-        <p className="text-accent text-x-small-size md:text-small-size font-f-family-2 pt-2 md:pt-1">
+        <p className="text-gray-900 text-x-small-size md:text-small-size font-f-family-2 pt-2 md:pt-1">
           {discount_data.title}
         </p>
       </div>
@@ -157,6 +157,12 @@ const Home = () => {
             Experience a seamless, personalized, and rewarding way to shop.
             We're building the future of retail, one order at a time.
           </p>
+          <Link
+            to="/product"
+            className="hero-cta-btn bg-primary text-accent flex items-center justify-center gap-2 p-2 pl-2 pr-2 md:p-2 md:pl-3.5 md:pr-3.5 w-fit rounded-full mt-5 ml-2 md:ml-3 cursor-pointer transition duration-150 ease-in"
+          >
+            Shop Now <AiOutlineArrowRight />
+          </Link>
         </div>
         <div className="hero-image-container">
           <img src={heroImage} alt="" />
@@ -166,7 +172,7 @@ const Home = () => {
       {/* Categories section */}
       <section className="categories-section">
         <h2 className="sub-heading">Explore our Categories</h2>
-        <div className="w-full h-fit p-3 lg:p-10 grid grid-cols-4 grid-rows-2 md:grid-rows-2 md:grid-cols-3 lg:grid-cols-5 lg:grid-rows-2 gap-4 md:gap-2">
+        <div className="w-full h-fit p-3 lg:p-10 grid grid-cols-3 grid-rows-2 md:grid-rows-2 md:grid-cols-3 lg:grid-cols-5 lg:grid-rows-2 gap-4 md:gap-2">
           {categoriesData.map((category) => (
             <Category key={category.id} categoryData={category} />
           ))}
@@ -195,7 +201,7 @@ const Home = () => {
               navigation
             >
               {products.map((deal) => (
-                <SwiperSlide key={deal.product_asin}>
+                <SwiperSlide key={Math.random()}>
                   {/* <Link to={deal.deal_url} target="blank"> */}
                   <Deal deal={deal} />
                   {/* </Link> */}
@@ -226,16 +232,16 @@ const Home = () => {
         </div>
       </section>
       {/* End of discount section */}
+      {/* Best sellers section */}
       <h3 className="sub-heading">Best Sellers</h3>
       <section className="best-sellers-section">
         <nav>
           {bestCategories.map((category) => (
             <button
-              className="p-2 md:pl-3 md:pr-3 bg-transparent text-accent font-f-family-2 text-x-small-size md:text-small-size cursor-pointer rounded-full"
+              className="p-2 md:pl-3 md:pr-3 bg-transparent text-accent font-f-family-2 text-x-small-size md:text-medium-size cursor-pointer rounded-full"
               style={{
-                backgroundColor: category.title === filterCategory && "#0b0b0b",
-                color: category.title === filterCategory ? "#fff" : "#aaa",
-                border: category.title === filterCategory && "#0b0b0b",
+                color: category.title === filterCategory && "#ffd620",
+                fontWeight: category.title === filterCategory && "bold",
               }}
               key={category.id}
               onClick={() => {
@@ -251,9 +257,11 @@ const Home = () => {
         {/* main content */}
         <div className="w-full h-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 pt-10">
           {filterData.map((Fdata) => (
-            <div
+            <Link
+              to={`/product/${Fdata.product_asin}`}
+              state={{ Fdata }}
               className="w-40 h-88 md:w-55 lg:w-80 rounded-md bg-none relative hover:shadow-sm hover:shadow-gray-300 transition duration-300 ease-in cursor-pointer"
-              key={Fdata.asin}
+              key={Fdata.product_asin}
             >
               <img
                 src={
@@ -266,14 +274,14 @@ const Home = () => {
               />
               {/* Text container */}
               <div className="w-full h-fit pt-2 md:p-2 mt-4">
-                <h3 className="text-medium-size text-accent font-f-family-2 font-bold p-1">
+                <h3 className="text-small-size md:text-medium-size text-accent font-f-family-2 font-bold p-1">
                   {Fdata.product_title.length > 15
-                    ? Fdata.product_title.slice(0, 25) + "..."
+                    ? Fdata.product_title.slice(0, 15) + "..."
                     : Fdata.product_title.length}
                 </h3>
 
                 <div className="w-full h-fit p-1 flex items-center justify-start gap-2">
-                  <p className="text-small-size md:text-medium-size text-gray-500 flex-1">
+                  <p className="text-small-size md:text-medium-size text-gray-800 flex-1">
                     {Fdata.product_price}
                   </p>
                   <span className="text-x-small-size md:text-medium-size text-yellow-500">
@@ -284,13 +292,53 @@ const Home = () => {
                   </span>
                 </div>
               </div>
-              <button className="bg-transparent text-accent flex items-center justify-center p-1 pl-2 pr-2 md:p-2 md:pl-3 md:pr-3 w-full lg:w-fit rounded-full mt-5 ml-2 md:ml-3 cursor-pointer hover:bg-orange-900 hover:border-orange-900 hover:text-white transition duration-150 ease-in">
+              <button className="bg-primary text-accent flex items-center justify-center p-1 pl-2 pr-2 md:p-2 md:pl-3 md:pr-3 w-full lg:w-fit rounded-full mt-5 ml-2 md:ml-3 cursor-pointer transition duration-150 ease-in">
                 Add to Cart
               </button>
-            </div>
+            </Link>
           ))}
         </div>
       </section>
+      {/* End of Categories section */}
+      {/* Quick Info section */}
+      <section className="quick-info-section">
+        <div className="text-container">
+          <h5>Get 8% Cash Back</h5>
+          <p>on Flix.com</p>
+          <button className="learn-more-cta">
+            Learn More <AiOutlineArrowRight />
+          </button>
+        </div>
+        <div className="img-container">
+          <img src={cards} alt="Stack of cards image" />
+        </div>
+      </section>
+      {/* End of quick info section */}
+      {/* Services/FAQs */}
+      <h5 className="sub-heading">Services to help you Shop Better</h5>
+      <section className="services">
+        {faqs.map((faq) => (
+          <div className="service" key={faq.id}>
+            <div className="text-content">
+              <h5>{faq.title}</h5>
+              <p>{faq.desc}</p>
+            </div>
+            <div className="img-container">
+              <img src={faq.image_src} alt={faq.title} />
+            </div>
+          </div>
+        ))}
+      </section>
+      <Link
+        to="/about"
+        className="text-accent text-x-small-size md:text-small-size font-bold cursor-pointer pl-3 md:pl-5 flex items-center gap-2"
+      >
+        Learn More <AiOutlineArrowRight />
+      </Link>
+      {/* End of Services/FAQs Section */}
+      {/* Footer */}
+      <Footer />
+      {/* End of footer */}
     </div>
   );
 };

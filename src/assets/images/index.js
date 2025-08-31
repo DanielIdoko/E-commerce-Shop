@@ -1,4 +1,5 @@
 import logo from './logo.png'
+import cards from './cards.png'
 // Hero images
 import heroImage from './heroImage.png'
 import heroImage2 from './hero-image-2.png'
@@ -27,9 +28,22 @@ import books from './books.png'
 import pcs from './pcs.png'
 import furniture from './furniture.png'
 import book from './book.png'
+// Imports for FAQs
+import faq1 from './faq1.png'
+import faq2 from './faq2.png'
+import faq3 from './faq3.png'
+// Imports for footer
+import stripe from './stripe.png'
+import visa from './visa.png'
+import mastercard from './mastercard.png'
+import amazon from './amazon.png'
+import binoculars from './binoculars.png'
+
 
 export {
     logo,
+    binoculars,
+    cards,
     heroImage,
     heroImage2,
     heroImage3,
@@ -44,5 +58,7 @@ export {
     office,
     appliances2,
     appliances,
-    book, furniture, pcs
+    book, furniture, pcs,
+    faq1, faq2, faq3,
+    stripe, amazon, visa, mastercard
 }
