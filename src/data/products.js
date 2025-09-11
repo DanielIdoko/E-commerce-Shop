@@ -1,8 +1,6 @@
 // Assign the data directly to a variable
-const products = [
+const dealProducts = [
   {
-    "product_asin": "UUBUN98h9h9",
-    "deal_type": "BEST_DEAL",
     "deal_title": "Jackery Explorer 1000 v2 Portable Power Station,1070Wh LiFePO4 Battery,1500W AC/100W USB-C Output, 1 Hr Fast Charge, Solar Generator for Camping,Emergency, RV, Off-Grid Living(Solar Panel Optional)",
     "deal_photo": "https://m.media-amazon.com/images/I/61JVKysP1nL.jpg",
     "deal_state": "AVAILABLE",
@@ -25,10 +23,9 @@ const products = [
     },
     "deal_badge": "44% off",
     "type": "SINGLE_ITEM",
-    "product_product_asin": "B0D7PPG25F"
+    "deal_asin": "B0D7PPG25F"
   },
   {
-    "product_asin": "f55d7882",
     "deal_type": "BEST_DEAL",
     "deal_title": "Amazon Echo Show 5 (newest model), Smart display with 2x the bass and clearer sound, Charcoal",
     "deal_photo": "https://m.media-amazon.com/images/I/51CYzU8PL4L.jpg",
@@ -52,10 +49,9 @@ const products = [
     },
     "deal_badge": "28% off",
     "type": "SINGLE_ITEM",
-    "product_product_asin": "B09B2SBHQK"
+    "deal_asin": "B09B2SBHQK"
   },
   {
-    "product_asin": "c8631919",
     "deal_type": "BEST_DEAL",
     "deal_title": "Shark | Upright Vacuum Cleaner | Navigator Lift-Away | Swivel Steering | HEPA Filter | Vacuum for Pet Hair | Crevice Tool & Dusting Brush Included | For Carpets & Hard Floors | White/Silver | NV356E",
     "deal_photo": "https://m.media-amazon.com/images/I/61MeBFOp2aL.jpg",
@@ -79,10 +75,9 @@ const products = [
     },
     "deal_badge": "30% off",
     "type": "SINGLE_ITEM",
-    "product_product_asin": "B005KMDV9A"
+    "deal_asin": "B005KMDV9A"
   },
   {
-    "product_asin": "61770b0b",
     "deal_type": "BEST_DEAL",
     "deal_title": "Ring Floodlight Cam Wired Plus — Outdoor home or business security with motion-activated 1080p HD video and floodlights, (2021 release) White",
     "deal_photo": "https://m.media-amazon.com/images/I/51TdAAWxGnS.jpg",
@@ -106,10 +101,9 @@ const products = [
     },
     "deal_badge": "33% off",
     "type": "SINGLE_ITEM",
-    "product_product_asin": "B08F6GPQQ7"
+    "deal_asin": "B08F6GPQQ7"
   },
   {
-    "product_asin": "f7676a3a",
     "deal_type": "BEST_DEAL",
     "deal_title": "Samsung 990 EVO Plus SSD 2TB, PCIe Gen 4x4, Gen 5x2 M.2 2280, Speeds Up-to 7,250 MB/s, Upgrade Storage for PC/Laptops, HMB Technology and Intelligent Turbowrite 2.0, (MZ-V9S2T0B/AM)",
     "deal_photo": "https://m.media-amazon.com/images/I/61nq7N0igEL.jpg",
@@ -133,10 +127,9 @@ const products = [
     },
     "deal_badge": "32% off",
     "type": "SINGLE_ITEM",
-    "product_product_asin": "B0DHLCRF91"
+    "deal_asin": "B0DHLCRF91"
   },
   {
-    "product_asin": "04f4d0dd",
     "deal_type": "BEST_DEAL",
     "deal_title": "TCL 65-Inch Class QM6K Series QD-Mini LED 4K UHD Google Smart TV Best Value Mini-LED TV - QLED, 144hz, 288hz Gaming Rate, High Contrast Screen, Onkyo Audio, Dolby Atmos (65QM6K, 2025 Model)",
     "deal_photo": "https://m.media-amazon.com/images/I/716ud6favSL.jpg",
@@ -160,10 +153,9 @@ const products = [
     },
     "deal_badge": "15% off",
     "type": "SINGLE_ITEM",
-    "product_product_asin": "B0DSRSTJ54"
+    "deal_asin": "B0DSRSTJ54"
   },
   {
-    "product_asin": "d2f416d2",
     "deal_type": "BEST_DEAL",
     "deal_title": "Roku Streaming Stick HD 2025 — HD Streaming Device for TV with Roku Voice Remote, Free & Live TV",
     "deal_photo": "https://m.media-amazon.com/images/I/71GUOcJCzSL.jpg",
@@ -187,10 +179,9 @@ const products = [
     },
     "deal_badge": "37% off",
     "type": "SINGLE_ITEM",
-    "product_product_asin": "B0DXXYS4BJ"
+    "deal_asin": "B0DXXYS4BJ"
   },
   {
-    "product_asin": "d26adbff",
     "deal_type": "BEST_DEAL",
     "deal_title": "Amazon Fire TV 50\" 4-Series 4K UHD smart TV, stream live TV without cable, 2024 release",
     "deal_photo": "https://m.media-amazon.com/images/I/71ka3DKN63L.jpg",
@@ -214,10 +205,9 @@ const products = [
     },
     "deal_badge": "28% off",
     "type": "SINGLE_ITEM",
-    "product_product_asin": "B0CZBLZYY5"
+    "deal_asin": "B0CZBLZYY5"
   },
   {
-    "product_asin": "fc7b1b52",
     "deal_type": "BEST_DEAL",
     "deal_title": "Glad Tall Kitchen Drawstring Trash Bags - Odorshield 13 Gallon White Trash Bag, Febreze Fresh Clean, 110 Count",
     "deal_photo": "https://m.media-amazon.com/images/I/81Tb5cNcBxL.jpg",
@@ -241,10 +231,9 @@ const products = [
     },
     "deal_badge": "32% off",
     "type": "SINGLE_ITEM",
-    "product_product_asin": "B07T9MBNTT"
+    "deal_asin": "B07T9MBNTT"
   },
   {
-    "product_asin": "4a900b14",
     "deal_type": "BEST_DEAL",
     "deal_title": "Bissell Little Green Mini Portable Carpet and Upholstery Deep Cleaner, Car/Auto Detailer, with HydroRinse Self-Cleaning Tool and 4\" Tough Stain Tool, Tea Green, 4075",
     "deal_photo": "https://m.media-amazon.com/images/I/71Zg+lIkXeL.jpg",
@@ -268,10 +257,9 @@ const products = [
     },
     "deal_badge": "11% off",
     "type": "SINGLE_ITEM",
-    "product_product_asin": "B0DJMP6T3N"
+    "deal_asin": "B0DJMP6T3N"
   },
   {
-    "product_asin": "f7676a3a",
     "deal_type": "BEST_DEAL",
     "deal_title": "Samsung 990 PRO SSD 4TB PCIe 4.0 M.2 2280 Internal Solid State Hard Drive, Seq. Read Speeds Up to 7,450 MB/s for High End Computing, Gaming, and Heavy Duty Workstations, MZ-V9P4T0B/AM",
     "deal_photo": "https://m.media-amazon.com/images/I/81WuG6lQuDL.jpg",
@@ -295,10 +283,9 @@ const products = [
     },
     "deal_badge": "28% off",
     "type": "SINGLE_ITEM",
-    "product_product_asin": "B0CHGT1KFJ"
+    "deal_asin": "B0CHGT1KFJ"
   },
   {
-    "product_asin": "10808081",
     "deal_type": "BEST_DEAL",
     "deal_title": "COSORI Air Fryer 9-in-1, Compact & Large 6-Qt, Fast Turbo Modes, 90–450°F Precise Heat for Even Results, Up to 95% Less Oil*, Roast, Bake, Dry, Reheat, Frozen, Broil, Proof, 120V, TurboBlaze, Ceramic",
     "deal_photo": "https://m.media-amazon.com/images/I/81lTKYX5LNL.jpg",
@@ -322,10 +309,9 @@ const products = [
     },
     "deal_badge": "25% off",
     "type": "SINGLE_ITEM",
-    "product_product_asin": "B0C33CHG99"
+    "deal_asin": "B0C33CHG99"
   },
   {
-    "product_asin": "2a2b030e",
     "deal_type": "BEST_DEAL",
     "deal_title": "Amazon Fire HD 10 tablet (newest model) built for relaxation, 10.1\" vibrant Full HD screen, octa-core processor, 3 GB RAM, 32 GB, Black",
     "deal_photo": "https://m.media-amazon.com/images/I/71ZvPIpKktL.jpg",
@@ -349,7 +335,7 @@ const products = [
     },
     "deal_badge": "36% off",
     "type": "SINGLE_ITEM",
-    "product_product_asin": "B0BHZT5S12"
+    "product_asin": "B0BHZT5S12"
   }
 ];
 
@@ -1839,4 +1825,4 @@ const store = [
   },
 ]
 
-export { products, bestSellers, store };
+export { dealProducts, bestSellers, store };

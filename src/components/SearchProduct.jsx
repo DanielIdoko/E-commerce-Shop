@@ -6,7 +6,7 @@ const SearchProduct = ({ item }) => {
       className="w-40 h-88 md:w-55 lg:w-80 rounded-md bg-none relative hover:shadow-sm hover:shadow-gray-300 transition duration-300 ease-in cursor-pointer"
       key={item.product_asin}
       >
-      <Link to={`/products/${item.product_asin}`} state={{item}}>
+      <Link to={`/product/${item.product_asin}`} state={{item}}>
         <img
           src={item.product_photo}
           alt={item.product_title + " image"}

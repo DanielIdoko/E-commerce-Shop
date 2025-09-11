@@ -12,7 +12,7 @@ const Search = () => {
 
   const { isLoading } = useSearchStore();
   // Filter products based on search term
-  // PS: got the term using react's useParams() method
+  // PS: got the term value/data by using react's useParams() method
   const searchResults = useMemo(() => {
     return store.filter(
       (item) =>

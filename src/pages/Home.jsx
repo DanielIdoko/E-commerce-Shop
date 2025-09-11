@@ -17,7 +17,7 @@ import "swiper/css/effect-fade";
 import "../css/SwiperCustoms.css";
 import Spinner from "../components/common/Loader/Spinner";
 import { Link } from "react-router-dom";
-import { products, bestSellers } from "../data/products";
+import { dealProducts, bestSellers } from "../data/products";
 import {
   categoriesData,
   discounts,
@@ -33,7 +33,7 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 const Deal = ({ deal }) => {
   return (
     <Link
-      to={`/product/${deal.product_asin}`}
+      to={`/product/${deal.deal_asin}`}
       state={{ deal }}
       className="w-40 h-88 md:w-55 lg:w-90 rounded-md p-1.5 relative cursor-pointer transition duration-200 ease-in"
     >
@@ -59,7 +59,7 @@ const Deal = ({ deal }) => {
           {deal.deal_state ? deal.deal_state : "OUT OF STOCK"}
         </span>
       </div>
-      <button className="bg-primary text-accent  flex items-center justify-center p-1 pl-2 pr-2 md:p-2 md:pl-3 md:pr-3 w-full lg:w-fit rounded-full mt-3 cursor-pointer transition duration-150 ease-in">
+      <button className="bg-primary text-accent  flex items-center justify-center p-1 pl-2 pr-2 md:p-2 md:px-3 w-full lg:w-fit rounded-full mt-3 cursor-pointer transition duration-150 ease-in">
         Add to Cart
       </button>
     </Link>
@@ -159,7 +159,7 @@ const Home = () => {
           </p>
           <Link
             to="/product"
-            className="hero-cta-btn bg-primary text-accent flex items-center justify-center gap-2 p-2 pl-2 pr-2 md:p-2 md:pl-3.5 md:pr-3.5 w-fit rounded-full mt-5 ml-2 md:ml-3 cursor-pointer transition duration-150 ease-in"
+            className="hero-cta-btn bg-primary text-accent flex items-center justify-center gap-2 p-2 px-2 md:p-2 md:px-3.5 w-fit rounded-full mt-5 ml-2 md:ml-3 cursor-pointer transition duration-150 ease-in"
           >
             Shop Now <AiOutlineArrowRight />
           </Link>
@@ -200,11 +200,9 @@ const Home = () => {
               }}
               navigation
             >
-              {products.map((deal) => (
-                <SwiperSlide key={Math.random()}>
-                  {/* <Link to={deal.deal_url} target="blank"> */}
+              {dealProducts.map((deal) => (
+                <SwiperSlide key={deal.deal_asin}>
                   <Deal deal={deal} />
-                  {/* </Link> */}
                 </SwiperSlide>
               ))}
             </Swiper>
