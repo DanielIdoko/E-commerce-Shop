@@ -32,11 +32,7 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 // Deal component
 const Deal = ({ deal }) => {
   return (
-    <Link
-      to={`/product/${deal.deal_asin}`}
-      state={{ deal }}
-      className="w-40 h-88 md:w-55 lg:w-90 rounded-md p-1.5 relative cursor-pointer transition duration-200 ease-in"
-    >
+     <Link to={`/product/${deal.deal_asin}`} state={{ deal }} className="w-40 h-88 md:w-55 lg:w-90 rounded-md p-1.5 relative cursor-pointer transition duration-200 ease-in">
       <img
         src={deal.deal_photo}
         alt={deal.deal_title}
@@ -127,7 +123,7 @@ const Home = () => {
   const [deals, setDeals] = useState([]);
   // Filter category states
   const [loading, setIsloading] = useState(true);
-  const [filterCategory, setFilterCategory] = useState("Beauty");
+  const [filterCategory, setFilterCategory] = useState("Electronics");
   const [filterData, setFilterData] = useState([]);
 
   // code to filter data by category

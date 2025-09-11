@@ -338,6 +338,19 @@ const dealProducts = [
     "product_asin": "B0BHZT5S12"
   }
 ];
+// Deal data ends
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
