@@ -1098,6 +1098,9 @@ const bestSellers = [
 
 
 
+
+
+// Main store
 const store = [
    {
     "rank": 1,
@@ -1836,6 +1839,7 @@ const store = [
     "rank_change_label": null,
     "product_category": "Appliances"
   },
+  
 ]
 
 export { dealProducts, bestSellers, store };

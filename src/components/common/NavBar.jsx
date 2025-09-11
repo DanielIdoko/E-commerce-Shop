@@ -44,28 +44,21 @@ const NavBar = () => {
           to="/"
           className="navbar-navlink"
           style={({ isActive }) => ({
-            color: isActive ? "#DD8B26" : "#555",
+            color: isActive ? "#fff" : "#555",
+            backgroundColor: isActive && "#ffd620"
           })}
-        >
+          >
           Home
         </NavLink>
         <NavLink
           to="/products"
           className="navbar-navlink"
           style={({ isActive }) => ({
-            color: isActive ? "#DD8B26" : "#555",
+            color: isActive ? "#fff" : "#555",
+            backgroundColor: isActive && "#ffd620"
           })}
         >
           Store
-        </NavLink>
-        <NavLink
-          to="/deals"
-          className="navbar-navlink"
-          style={({ isActive }) => ({
-            color: isActive ? "#DD8B26" : "#555",
-          })}
-        >
-          Deals
         </NavLink>
       </nav>
       <form 

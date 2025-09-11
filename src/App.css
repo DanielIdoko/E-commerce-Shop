@@ -20,6 +20,7 @@
   /* Color themes */
   --color-base: #f1f1f1;
   --color-primary: #ffd620;
+  --color-primary-lighter: #ffd62060;
   --color-secondary: #359442;
   --color-accent: #0b0b0b;
   /* font size themes */
@@ -63,18 +64,27 @@ body {
   @apply text-small-size md:text-large-size font-f-family-2 pb-2 pl-2 md:pl-10;
 }
 
+/* Add item to cart button here */
+.add-to-cart-btn {
+  @apply bg-primary-lighter text-small-size text-accent font-f-family-1 flex items-center justify-center p-1 pl-2 pr-2 md:p-2 md:pl-3 md:pr-3 w-full lg:w-fit rounded-full cursor-pointer transition duration-150 ease-in;
+}
+.buy-now-btn {
+  @apply bg-transparent border-1 border-accent text-small-size text-accent font-f-family-1 flex items-center justify-center p-1 pl-2 pr-2 md:p-2 md:pl-3 md:pr-3 w-full lg:w-fit rounded-full cursor-pointer;
+}
+
+/* Heading text */
 .heading {
-  @apply text-small-size md:text-x-medium-size font-f-family-1 pt-10 p-3;
+  @apply text-small-size md:text-medium-size font-f-family-1 pt-10 p-3;
 }
 /* Navigations */
 .navbar {
   @apply w-full h-20 bg-gray-100 md:bg-white flex items-center justify-around md:gap-3 lg:gap-6 overflow-hidden fixed top-0 left-0 z-50;
 }
 .navbar .navbar-navlink {
-  @apply text-small-size font-f-family-2 text-accent transition duration-150 ease-in cursor-pointer hover:text-gray-700;
+  @apply text-small-size font-f-family-2 text-accent transition duration-150 ease-in cursor-pointer rounded-full px-3 py-1;
 }
 .bottom-navigation {
-  @apply w-full h-16 bg-gray-100 fixed bottom-0 left-0 md:hidden z-50;
+  @apply w-full h-16 bg-gray-100 fixed bottom-0 left-0 md:hidden z-90;
 }
 .bottom-navigation nav {
   @apply w-full h-full p-2 flex items-center justify-center gap-15;
@@ -198,6 +208,7 @@ body {
 .services .service .img-container img {
   @apply w-full h-full object-cover;
 }
+
 /* utils */
 /* .home-category img {
   transform: scale(1);
@@ -293,4 +304,9 @@ img:hover {
 .swiper-button-disabled {
   opacity: 0.5; /* Reduce opacity when disabled */
   cursor: not-allowed;
+}
+
+/* Breadcrumbs here */
+.breadcrumb-text {
+  @apply text-small-size font-f-family-2 text-accent hover:underline;
 }
