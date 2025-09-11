@@ -17,6 +17,13 @@ import {
   book,
   furniture,
   pcs,
+  faq1,
+  faq3,
+  faq2,
+  stripe,
+  visa,
+  mastercard,
+  amazon,
 } from "../assets/images/index";
 
 // Categories data
@@ -28,7 +35,7 @@ const categoriesData = [
   },
   {
     id: "002",
-    title: "Office Products",
+    title: "Office",
     category_image: office,
   },
   {
@@ -156,5 +163,49 @@ const bestCategories = [
   },
 ];
 
+// FAQs data
+const faqs = [
+  {
+    id: "fhehe8heh",
+    title: "Frequently Asked Questions",
+    desc: "Updates on the best ways to shop safe in our Stores",
+    image_src: faq1
+  },
+  {
+    id: "e9h9eh9c9eh9ceh",
+    title: "Online Payment Process",
+    desc: "Get to know Our Payment Methods",
+    image_src: faq2
+  },
+  {
+    id: "99ucw88cec",
+    title: "Frequently Asked Questions",
+    desc: "Updates on the best ways to shop safe in our Stores",
+    image_src: faq3
+  },
+]
 
-export { categoriesData, discounts, bestCategories, brands };
+const footerCards = [
+  {
+    id: "e939y93eh3e9h9h9",
+    card_title: "Stripe",
+    card_image: stripe
+  },
+  {
+    id: "ud9h93hfh339h93h3",
+    card_title: "Visa",
+    card_image: visa
+  },
+  {
+    id: "sjcwihhw9",
+    card_title: "Mastercard",
+    card_image: mastercard
+  },
+  {
+    id: "jceihchehc99",
+    card_title: "Amazon Pay",
+    card_image: amazon
+  },
+]
+
+export { categoriesData, discounts, bestCategories, brands, faqs, footerCards };

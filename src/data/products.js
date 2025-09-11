@@ -1,8 +1,6 @@
 // Assign the data directly to a variable
-const products = [
+const dealProducts = [
   {
-    "deal_id": "910a2914",
-    "deal_type": "BEST_DEAL",
     "deal_title": "Jackery Explorer 1000 v2 Portable Power Station,1070Wh LiFePO4 Battery,1500W AC/100W USB-C Output, 1 Hr Fast Charge, Solar Generator for Camping,Emergency, RV, Off-Grid Living(Solar Panel Optional)",
     "deal_photo": "https://m.media-amazon.com/images/I/61JVKysP1nL.jpg",
     "deal_state": "AVAILABLE",
@@ -25,10 +23,9 @@ const products = [
     },
     "deal_badge": "44% off",
     "type": "SINGLE_ITEM",
-    "product_asin": "B0D7PPG25F"
+    "deal_asin": "B0D7PPG25F"
   },
   {
-    "deal_id": "f55d7882",
     "deal_type": "BEST_DEAL",
     "deal_title": "Amazon Echo Show 5 (newest model), Smart display with 2x the bass and clearer sound, Charcoal",
     "deal_photo": "https://m.media-amazon.com/images/I/51CYzU8PL4L.jpg",
@@ -52,10 +49,9 @@ const products = [
     },
     "deal_badge": "28% off",
     "type": "SINGLE_ITEM",
-    "product_asin": "B09B2SBHQK"
+    "deal_asin": "B09B2SBHQK"
   },
   {
-    "deal_id": "c8631919",
     "deal_type": "BEST_DEAL",
     "deal_title": "Shark | Upright Vacuum Cleaner | Navigator Lift-Away | Swivel Steering | HEPA Filter | Vacuum for Pet Hair | Crevice Tool & Dusting Brush Included | For Carpets & Hard Floors | White/Silver | NV356E",
     "deal_photo": "https://m.media-amazon.com/images/I/61MeBFOp2aL.jpg",
@@ -79,10 +75,9 @@ const products = [
     },
     "deal_badge": "30% off",
     "type": "SINGLE_ITEM",
-    "product_asin": "B005KMDV9A"
+    "deal_asin": "B005KMDV9A"
   },
   {
-    "deal_id": "61770b0b",
     "deal_type": "BEST_DEAL",
     "deal_title": "Ring Floodlight Cam Wired Plus — Outdoor home or business security with motion-activated 1080p HD video and floodlights, (2021 release) White",
     "deal_photo": "https://m.media-amazon.com/images/I/51TdAAWxGnS.jpg",
@@ -106,10 +101,9 @@ const products = [
     },
     "deal_badge": "33% off",
     "type": "SINGLE_ITEM",
-    "product_asin": "B08F6GPQQ7"
+    "deal_asin": "B08F6GPQQ7"
   },
   {
-    "deal_id": "f7676a3a",
     "deal_type": "BEST_DEAL",
     "deal_title": "Samsung 990 EVO Plus SSD 2TB, PCIe Gen 4x4, Gen 5x2 M.2 2280, Speeds Up-to 7,250 MB/s, Upgrade Storage for PC/Laptops, HMB Technology and Intelligent Turbowrite 2.0, (MZ-V9S2T0B/AM)",
     "deal_photo": "https://m.media-amazon.com/images/I/61nq7N0igEL.jpg",
@@ -133,10 +127,9 @@ const products = [
     },
     "deal_badge": "32% off",
     "type": "SINGLE_ITEM",
-    "product_asin": "B0DHLCRF91"
+    "deal_asin": "B0DHLCRF91"
   },
   {
-    "deal_id": "04f4d0dd",
     "deal_type": "BEST_DEAL",
     "deal_title": "TCL 65-Inch Class QM6K Series QD-Mini LED 4K UHD Google Smart TV Best Value Mini-LED TV - QLED, 144hz, 288hz Gaming Rate, High Contrast Screen, Onkyo Audio, Dolby Atmos (65QM6K, 2025 Model)",
     "deal_photo": "https://m.media-amazon.com/images/I/716ud6favSL.jpg",
@@ -160,10 +153,9 @@ const products = [
     },
     "deal_badge": "15% off",
     "type": "SINGLE_ITEM",
-    "product_asin": "B0DSRSTJ54"
+    "deal_asin": "B0DSRSTJ54"
   },
   {
-    "deal_id": "d2f416d2",
     "deal_type": "BEST_DEAL",
     "deal_title": "Roku Streaming Stick HD 2025 — HD Streaming Device for TV with Roku Voice Remote, Free & Live TV",
     "deal_photo": "https://m.media-amazon.com/images/I/71GUOcJCzSL.jpg",
@@ -187,10 +179,9 @@ const products = [
     },
     "deal_badge": "37% off",
     "type": "SINGLE_ITEM",
-    "product_asin": "B0DXXYS4BJ"
+    "deal_asin": "B0DXXYS4BJ"
   },
   {
-    "deal_id": "d26adbff",
     "deal_type": "BEST_DEAL",
     "deal_title": "Amazon Fire TV 50\" 4-Series 4K UHD smart TV, stream live TV without cable, 2024 release",
     "deal_photo": "https://m.media-amazon.com/images/I/71ka3DKN63L.jpg",
@@ -214,10 +205,9 @@ const products = [
     },
     "deal_badge": "28% off",
     "type": "SINGLE_ITEM",
-    "product_asin": "B0CZBLZYY5"
+    "deal_asin": "B0CZBLZYY5"
   },
   {
-    "deal_id": "fc7b1b52",
     "deal_type": "BEST_DEAL",
     "deal_title": "Glad Tall Kitchen Drawstring Trash Bags - Odorshield 13 Gallon White Trash Bag, Febreze Fresh Clean, 110 Count",
     "deal_photo": "https://m.media-amazon.com/images/I/81Tb5cNcBxL.jpg",
@@ -241,10 +231,9 @@ const products = [
     },
     "deal_badge": "32% off",
     "type": "SINGLE_ITEM",
-    "product_asin": "B07T9MBNTT"
+    "deal_asin": "B07T9MBNTT"
   },
   {
-    "deal_id": "4a900b14",
     "deal_type": "BEST_DEAL",
     "deal_title": "Bissell Little Green Mini Portable Carpet and Upholstery Deep Cleaner, Car/Auto Detailer, with HydroRinse Self-Cleaning Tool and 4\" Tough Stain Tool, Tea Green, 4075",
     "deal_photo": "https://m.media-amazon.com/images/I/71Zg+lIkXeL.jpg",
@@ -268,10 +257,9 @@ const products = [
     },
     "deal_badge": "11% off",
     "type": "SINGLE_ITEM",
-    "product_asin": "B0DJMP6T3N"
+    "deal_asin": "B0DJMP6T3N"
   },
   {
-    "deal_id": "f7676a3a",
     "deal_type": "BEST_DEAL",
     "deal_title": "Samsung 990 PRO SSD 4TB PCIe 4.0 M.2 2280 Internal Solid State Hard Drive, Seq. Read Speeds Up to 7,450 MB/s for High End Computing, Gaming, and Heavy Duty Workstations, MZ-V9P4T0B/AM",
     "deal_photo": "https://m.media-amazon.com/images/I/81WuG6lQuDL.jpg",
@@ -295,10 +283,9 @@ const products = [
     },
     "deal_badge": "28% off",
     "type": "SINGLE_ITEM",
-    "product_asin": "B0CHGT1KFJ"
+    "deal_asin": "B0CHGT1KFJ"
   },
   {
-    "deal_id": "10808081",
     "deal_type": "BEST_DEAL",
     "deal_title": "COSORI Air Fryer 9-in-1, Compact & Large 6-Qt, Fast Turbo Modes, 90–450°F Precise Heat for Even Results, Up to 95% Less Oil*, Roast, Bake, Dry, Reheat, Frozen, Broil, Proof, 120V, TurboBlaze, Ceramic",
     "deal_photo": "https://m.media-amazon.com/images/I/81lTKYX5LNL.jpg",
@@ -322,10 +309,9 @@ const products = [
     },
     "deal_badge": "25% off",
     "type": "SINGLE_ITEM",
-    "product_asin": "B0C33CHG99"
+    "deal_asin": "B0C33CHG99"
   },
   {
-    "deal_id": "2a2b030e",
     "deal_type": "BEST_DEAL",
     "deal_title": "Amazon Fire HD 10 tablet (newest model) built for relaxation, 10.1\" vibrant Full HD screen, octa-core processor, 3 GB RAM, 32 GB, Black",
     "deal_photo": "https://m.media-amazon.com/images/I/71ZvPIpKktL.jpg",
@@ -352,13 +338,27 @@ const products = [
     "product_asin": "B0BHZT5S12"
   }
 ];
+// Deal data ends
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // best sellers data
 const bestSellers = [
   {
     "rank": 1,
-    "asin": "B0DGVQMGBB",
+    "product_asin": "B0DGVQMGBB",
     "product_title": "Microsoft Office Home 2024 | Classic Apps: Word, Excel, PowerPoint | One-Time Purchase for 1 PC/MAC | Instant Download | Form",
     "product_price": "$149.99",
     "product_star_rating": "4",
@@ -370,7 +370,7 @@ const bestSellers = [
   },
   {
     "rank": 2,
-    "asin": "B0DHYGWYJ6",
+    "product_asin": "B0DHYGWYJ6",
     "product_title": "TurboTax Deluxe 2024 Tax Software, Federal & State Tax Return [PC/MAC Download]",
     "product_price": "$79.99",
     "product_star_rating": "4.3",
@@ -382,7 +382,7 @@ const bestSellers = [
   },
   {
     "rank": 3,
-    "asin": "B07Q33SJDW",
+    "product_asin": "B07Q33SJDW",
     "product_title": "Norton 360 Deluxe 2025, Antivirus software for 5 Devices with Auto-Renewal",
     "product_price": "$24.99",
     "product_star_rating": "4",
@@ -394,7 +394,7 @@ const bestSellers = [
   },
   {
     "rank": 4,
-    "asin": "B0823GT5JG",
+    "product_asin": "B0823GT5JG",
     "product_title": "iFit Train - Monthly Membership",
     "product_price": "$15.00",
     "product_star_rating": "3.4",
@@ -406,7 +406,7 @@ const bestSellers = [
   },
   {
     "rank": 5,
-    "asin": "B09MYJ1R6L",
+    "product_asin": "B09MYJ1R6L",
     "product_title": "Microsoft System Builder | Windоws 11 Home",
     "product_price": "$119.99",
     "product_star_rating": "4",
@@ -418,7 +418,7 @@ const bestSellers = [
   },
   {
     "rank": 6,
-    "asin": "B0BB2GF9WW",
+    "product_asin": "B0BB2GF9WW",
     "product_title": "McAfee Total Protection 5-Device 2025",
     "product_price": "$19.99",
     "product_star_rating": "4.3",
@@ -430,7 +430,7 @@ const bestSellers = [
   },
   {
     "rank": 7,
-    "asin": "B0DHYHPSMC",
+    "product_asin": "B0DHYHPSMC",
     "product_title": "TurboTax Home & Business 2024 Tax Software",
     "product_price": "$129.99",
     "product_star_rating": "4.3",
@@ -442,7 +442,7 @@ const bestSellers = [
   },
   {
     "rank": 8,
-    "asin": "B07Q6B5YL5",
+    "product_asin": "B07Q6B5YL5",
     "product_title": "Norton 360 Premium 2025",
     "product_price": "$29.99",
     "product_star_rating": "4.1",
@@ -454,7 +454,7 @@ const bestSellers = [
   },
   {
     "rank": 9,
-    "asin": "B0DHYH1R3N",
+    "product_asin": "B0DHYH1R3N",
     "product_title": "TurboTax Premier 2024 Tax Software",
     "product_price": "$114.99",
     "product_star_rating": "4.2",
@@ -466,7 +466,7 @@ const bestSellers = [
   },
   {
     "rank": 10,
-    "asin": "B0CLBV27N2",
+    "product_asin": "B0CLBV27N2",
     "product_title": "[Old Version] TurboTax Deluxe 2023",
     "product_price": "$69.99",
     "product_star_rating": "4.4",
@@ -478,7 +478,7 @@ const bestSellers = [
   },
   {
     "rank": 11,
-    "asin": "B07K98XDX8",
+    "product_asin": "B07K98XDX8",
     "product_title": "McAfee Total Protection 3-Device 2025 Ready",
     "product_price": "$19.99",
     "product_star_rating": "4.1",
@@ -490,7 +490,7 @@ const bestSellers = [
   },
   {
     "rank": 12,
-    "asin": "B09WCTTXQ6",
+    "product_asin": "B09WCTTXQ6",
     "product_title": "Windows 11 Pro Upgrade",
     "product_price": "$99.00",
     "product_star_rating": "3.8",
@@ -502,7 +502,7 @@ const bestSellers = [
   },
   {
     "rank": 13,
-    "asin": "B076VQ4Y4J",
+    "product_asin": "B076VQ4Y4J",
     "product_title": "Laplink PCmover Ultimate 11",
     "product_price": "$41.95",
     "product_star_rating": "4.2",
@@ -515,7 +515,7 @@ const bestSellers = [
   // Electronics
   {
     "rank": 26,
-    "asin": "B0CLBV27N2",
+    "product_asin": "B0CLBV27N2",
     "product_title": "Bose QuietComfort Earbuds II",
     "product_price": "$279.00",
     "product_star_rating": "4.3",
@@ -527,7 +527,7 @@ const bestSellers = [
   },
   {
     "rank": 27,
-    "asin": "B0CHX46H29",
+    "product_asin": "B0CHX46H29",
     "product_title": "Samsung Galaxy Tab S9 FE Android Tablet",
     "product_price": "$449.99",
     "product_star_rating": "4.5",
@@ -539,7 +539,7 @@ const bestSellers = [
   },
   {
     "rank": 28,
-    "asin": "B0892H1S89",
+    "product_asin": "B0892H1S89",
     "product_title": "Sony Alpha a7 IV Full-Frame Mirrorless Camera",
     "product_price": "$2498.00",
     "product_star_rating": "4.6",
@@ -551,7 +551,7 @@ const bestSellers = [
   },
   {
     "rank": 29,
-    "asin": "B08V2N3Q1S",
+    "product_asin": "B08V2N3Q1S",
     "product_title": "Ring Video Doorbell Wired",
     "product_price": "$64.99",
     "product_star_rating": "4.7",
@@ -563,7 +563,7 @@ const bestSellers = [
   },
   {
     "rank": 30,
-    "asin": "B0823GT5JG",
+    "product_asin": "B0823GT5JG",
     "product_title": "Nintendo Switch OLED Model",
     "product_price": "$349.99",
     "product_star_rating": "4.9",
@@ -575,7 +575,7 @@ const bestSellers = [
   },
   {
     "rank": 31,
-    "asin": "B0DHYHPSMC",
+    "product_asin": "B0DHYHPSMC",
     "product_title": "Kindle Paperwhite (16 GB) – With a 6.8” display",
     "product_price": "$149.99",
     "product_star_rating": "4.8",
@@ -587,7 +587,7 @@ const bestSellers = [
   },
   {
     "rank": 32,
-    "asin": "B07S27F9T5",
+    "product_asin": "B07S27F9T5",
     "product_title": "Microsoft Surface Pro 9 Tablet",
     "product_price": "$1099.00",
     "product_star_rating": "4.4",
@@ -599,7 +599,7 @@ const bestSellers = [
   },
   {
     "rank": 33,
-    "asin": "B085521C64",
+    "product_asin": "B085521C64",
     "product_title": "Google Nest Learning Thermostat",
     "product_price": "$249.00",
     "product_star_rating": "4.5",
@@ -611,7 +611,7 @@ const bestSellers = [
   },
   {
     "rank": 34,
-    "asin": "B07Q33SJDA",
+    "product_asin": "B07Q33SJDA",
     "product_title": "Crucial MX500 1TB SATA SSD",
     "product_price": "$79.99",
     "product_star_rating": "4.8",
@@ -623,7 +623,7 @@ const bestSellers = [
   },
   {
     "rank": 35,
-    "asin": "B07C3H7M5K",
+    "product_asin": "B07C3H7M5K",
     "product_title": "Fitbit Charge 6 Fitness Tracker",
     "product_price": "$159.95",
     "product_star_rating": "4.2",
@@ -635,7 +635,7 @@ const bestSellers = [
   },
   {
     "rank": 36,
-    "asin": "B08T9N1C4X",
+    "product_asin": "B08T9N1C4X",
     "product_title": "Razer DeathAdder V3 Pro Gaming Mouse",
     "product_price": "$129.99",
     "product_star_rating": "4.7",
@@ -648,7 +648,7 @@ const bestSellers = [
   // Fashion
   {
     "rank": 37,
-    "asin": "B09V7Y5Z1Q",
+    "product_asin": "B09V7Y5Z1Q",
     "product_title": "Puma Men's Essentials Logo T-Shirt",
     "product_price": "$19.99",
     "product_star_rating": "4.6",
@@ -660,7 +660,7 @@ const bestSellers = [
   },
   {
     "rank": 38,
-    "asin": "B08X2YK1QP",
+    "product_asin": "B08X2YK1QP",
     "product_title": "Levi's Women's 721 High Rise Skinny Jeans",
     "product_price": "$49.99",
     "product_star_rating": "4.5",
@@ -672,7 +672,7 @@ const bestSellers = [
   },
   {
     "rank": 39,
-    "asin": "B07ZQSC6NR",
+    "product_asin": "B07ZQSC6NR",
     "product_title": "Adidas Men's Ultraboost Running Shoes",
     "product_price": "$189.99",
     "product_star_rating": "4.7",
@@ -684,7 +684,7 @@ const bestSellers = [
   },
   {
     "rank": 40,
-    "asin": "B09F2H2Q9K",
+    "product_asin": "B09F2H2Q9K",
     "product_title": "Under Armour Women's Fly-By Running Shorts",
     "product_price": "$24.99",
     "product_star_rating": "4.5",
@@ -696,7 +696,7 @@ const bestSellers = [
   },
   {
     "rank": 41,
-    "asin": "B081T8C7CZ",
+    "product_asin": "B081T8C7CZ",
     "product_title": "Ray-Ban Rb2132 New Wayfarer Sunglasses",
     "product_price": "$144.00",
     "product_star_rating": "4.8",
@@ -708,7 +708,7 @@ const bestSellers = [
   },
   {
     "rank": 42,
-    "asin": "B093T8R4LF",
+    "product_asin": "B093T8R4LF",
     "product_title": "Columbia Women's Arcadia II Rain Jacket",
     "product_price": "$89.99",
     "product_star_rating": "4.6",
@@ -720,7 +720,7 @@ const bestSellers = [
   },
   {
     "rank": 43,
-    "asin": "B08ZHKZP6V",
+    "product_asin": "B08ZHKZP6V",
     "product_title": "Fossil Men's Grant Stainless Steel Chronograph Watch",
     "product_price": "$129.00",
     "product_star_rating": "4.7",
@@ -732,7 +732,7 @@ const bestSellers = [
   },
   {
     "rank": 44,
-    "asin": "B099YQ7D5Z",
+    "product_asin": "B099YQ7D5Z",
     "product_title": "Puma Women's 4Keeps Sports Bra",
     "product_price": "$29.99",
     "product_star_rating": "4.4",
@@ -744,7 +744,7 @@ const bestSellers = [
   },
   {
     "rank": 45,
-    "asin": "B07H2RR55Q",
+    "product_asin": "B07H2RR55Q",
     "product_title": "Nike Men's Dri-FIT Training Pants",
     "product_price": "$54.99",
     "product_star_rating": "4.6",
@@ -756,7 +756,7 @@ const bestSellers = [
   },
   {
     "rank": 46,
-    "asin": "B0B7YQTYFQ",
+    "product_asin": "B0B7YQTYFQ",
     "product_title": "Michael Kors Jet Set Travel Large Tote Bag",
     "product_price": "$149.99",
     "product_star_rating": "4.7",
@@ -769,7 +769,7 @@ const bestSellers = [
   // Beauty
   {
     "rank": 47,
-    "asin": "B07Z7LZ9T9",
+    "product_asin": "B07Z7LZ9T9",
     "product_title": "Olaplex No.3 Hair Perfector",
     "product_price": "$30.00",
     "product_star_rating": "4.7",
@@ -781,7 +781,7 @@ const bestSellers = [
   },
   {
     "rank": 48,
-    "asin": "B00I9ZW7ME",
+    "product_asin": "B00I9ZW7ME",
     "product_title": "CeraVe Hydrating Facial Cleanser",
     "product_price": "$15.99",
     "product_star_rating": "4.8",
@@ -793,7 +793,7 @@ const bestSellers = [
   },
   {
     "rank": 49,
-    "asin": "B07L6NK8R9",
+    "product_asin": "B07L6NK8R9",
     "product_title": "Revlon One-Step Volumizer Plus 2.0 Hair Dryer and Hot Air Brush",
     "product_price": "$42.99",
     "product_star_rating": "4.6",
@@ -805,7 +805,7 @@ const bestSellers = [
   },
   {
     "rank": 50,
-    "asin": "B004Y9GY5A",
+    "product_asin": "B004Y9GY5A",
     "product_title": "Cetaphil Daily Facial Cleanser",
     "product_price": "$14.49",
     "product_star_rating": "4.7",
@@ -817,7 +817,7 @@ const bestSellers = [
   },
   {
     "rank": 51,
-    "asin": "B00H2LVUQ2",
+    "product_asin": "B00H2LVUQ2",
     "product_title": "Neutrogena Hydro Boost Water Gel",
     "product_price": "$18.99",
     "product_star_rating": "4.8",
@@ -829,7 +829,7 @@ const bestSellers = [
   },
   {
     "rank": 52,
-    "asin": "B00GB85JR4",
+    "product_asin": "B00GB85JR4",
     "product_title": "L'Oréal Paris Makeup Voluminous Original Mascara",
     "product_price": "$9.99",
     "product_star_rating": "4.6",
@@ -841,7 +841,7 @@ const bestSellers = [
   },
   {
     "rank": 53,
-    "asin": "B003UBVHU6",
+    "product_asin": "B003UBVHU6",
     "product_title": "Aquaphor Healing Ointment",
     "product_price": "$13.99",
     "product_star_rating": "4.9",
@@ -853,7 +853,7 @@ const bestSellers = [
   },
   {
     "rank": 54,
-    "asin": "B01M7Y0WOT",
+    "product_asin": "B01M7Y0WOT",
     "product_title": "Mario Badescu Facial Spray with Aloe, Herbs and Rosewater",
     "product_price": "$7.00",
     "product_star_rating": "4.7",
@@ -865,7 +865,7 @@ const bestSellers = [
   },
   {
     "rank": 55,
-    "asin": "B01LTHXA5O",
+    "product_asin": "B01LTHXA5O",
     "product_title": "Maybelline SuperStay Matte Ink Liquid Lipstick",
     "product_price": "$8.99",
     "product_star_rating": "4.7",
@@ -878,7 +878,7 @@ const bestSellers = [
   // Fitness
   {
     "rank": 57,
-    "asin": "B00K6OSD1O",
+    "product_asin": "B00K6OSD1O",
     "product_title": "Fit Simplify Resistance Loop Exercise Bands",
     "product_price": "$12.95",
     "product_star_rating": "4.7",
@@ -890,7 +890,7 @@ const bestSellers = [
   },
   {
     "rank": 58,
-    "asin": "B07YVLW7YK",
+    "product_asin": "B07YVLW7YK",
     "product_title": "Sunny Health & Fitness SF-B1002 Belt Drive Indoor Cycling Bike",
     "product_price": "$299.99",
     "product_star_rating": "4.6",
@@ -902,7 +902,7 @@ const bestSellers = [
   },
   {
     "rank": 59,
-    "asin": "B07X5T5W99",
+    "product_asin": "B07X5T5W99",
     "product_title": "TRX GO Suspension Trainer System",
     "product_price": "$99.95",
     "product_star_rating": "4.8",
@@ -914,7 +914,7 @@ const bestSellers = [
   },
   {
     "rank": 60,
-    "asin": "B01N6S4A2U",
+    "product_asin": "B01N6S4A2U",
     "product_title": "Perfect Fitness Ab Carver Pro Roller",
     "product_price": "$39.99",
     "product_star_rating": "4.7",
@@ -926,7 +926,7 @@ const bestSellers = [
   },
   {
     "rank": 61,
-    "asin": "B08H7ZRFYN",
+    "product_asin": "B08H7ZRFYN",
     "product_title": "Bowflex SelectTech 552 Adjustable Dumbbells",
     "product_price": "$429.00",
     "product_star_rating": "4.8",
@@ -938,7 +938,7 @@ const bestSellers = [
   },
   {
     "rank": 62,
-    "asin": "B00XM0YGW8",
+    "product_asin": "B00XM0YGW8",
     "product_title": "ProsourceFit Puzzle Exercise Mat 24 Sq Ft",
     "product_price": "$29.99",
     "product_star_rating": "4.6",
@@ -950,7 +950,7 @@ const bestSellers = [
   },
   {
     "rank": 63,
-    "asin": "B07P9QFNJR",
+    "product_asin": "B07P9QFNJR",
     "product_title": "RENPHO Bluetooth Body Fat Scale",
     "product_price": "$24.99",
     "product_star_rating": "4.7",
@@ -962,7 +962,7 @@ const bestSellers = [
   },
   {
     "rank": 64,
-    "asin": "B07D1JJBJR",
+    "product_asin": "B07D1JJBJR",
     "product_title": "NordicTrack T Series Treadmill",
     "product_price": "$649.00",
     "product_star_rating": "4.6",
@@ -974,7 +974,7 @@ const bestSellers = [
   },
   {
     "rank": 66,
-    "asin": "B01N5UW254",
+    "product_asin": "B01N5UW254",
     "product_title": "CAP Barbell Coated Dumbbell Set with Rack",
     "product_price": "$159.99",
     "product_star_rating": "4.7",
@@ -987,7 +987,7 @@ const bestSellers = [
   // Appliances
   {
     "rank": 67,
-    "asin": "B08GYKNCCP",
+    "product_asin": "B08GYKNCCP",
     "product_title": "Instant Pot Duo Crisp 11-in-1 Air Fryer and Electric Pressure Cooker Combo",
     "product_price": "$199.95",
     "product_star_rating": "4.8",
@@ -999,7 +999,7 @@ const bestSellers = [
   },
   {
     "rank": 68,
-    "asin": "B07Y2H7M6X",
+    "product_asin": "B07Y2H7M6X",
     "product_title": "Ninja Foodi 9-in-1 Pressure Cooker and Air Fryer",
     "product_price": "$179.99",
     "product_star_rating": "4.7",
@@ -1011,7 +1011,7 @@ const bestSellers = [
   },
   {
     "rank": 69,
-    "asin": "B00YGZ96L0",
+    "product_asin": "B00YGZ96L0",
     "product_title": "iRobot Roomba 694 Robot Vacuum",
     "product_price": "$274.99",
     "product_star_rating": "4.6",
@@ -1023,7 +1023,7 @@ const bestSellers = [
   },
   {
     "rank": 70,
-    "asin": "B08T5QVT1G",
+    "product_asin": "B08T5QVT1G",
     "product_title": "COSORI Pro II Air Fryer Oven Combo, 5.8QT",
     "product_price": "$129.99",
     "product_star_rating": "4.8",
@@ -1035,7 +1035,7 @@ const bestSellers = [
   },
   {
     "rank": 71,
-    "asin": "B01N6S4A2U",
+    "product_asin": "B01N6S4A2U",
     "product_title": "Dyson V11 Torque Drive Cordless Vacuum Cleaner",
     "product_price": "$599.99",
     "product_star_rating": "4.8",
@@ -1047,7 +1047,7 @@ const bestSellers = [
   },
   {
     "rank": 72,
-    "asin": "B0858W8W6S",
+    "product_asin": "B0858W8W6S",
     "product_title": "Keurig K-Slim Coffee Maker, Single Serve K-Cup Pod Brewer",
     "product_price": "$129.99",
     "product_star_rating": "4.7",
@@ -1059,7 +1059,7 @@ const bestSellers = [
   },
   {
     "rank": 73,
-    "asin": "B07V3MXL2N",
+    "product_asin": "B07V3MXL2N",
     "product_title": "BLACK+DECKER Crush Master 10-Speed Blender",
     "product_price": "$34.99",
     "product_star_rating": "4.5",
@@ -1071,7 +1071,7 @@ const bestSellers = [
   },
   {
     "rank": 74,
-    "asin": "B07YF9SGBW",
+    "product_asin": "B07YF9SGBW",
     "product_title": "Frigidaire Compact Ice Maker",
     "product_price": "$129.99",
     "product_star_rating": "4.6",
@@ -1083,7 +1083,7 @@ const bestSellers = [
   },
   {
     "rank": 75,
-    "asin": "B08N5LNQCX",
+    "product_asin": "B08N5LNQCX",
     "product_title": "Euhomy Countertop Ice Maker Machine",
     "product_price": "$139.99",
     "product_star_rating": "4.6",
@@ -1095,1128 +1095,747 @@ const bestSellers = [
   },
 ];
 
-export { products, bestSellers };
 
 
 
+const store = [
+   {
+    "rank": 1,
+    "product_asin": "B0DGVQMGBB",
+    "product_title": "Microsoft Office Home 2024 | Classic Apps: Word, Excel, PowerPoint | One-Time Purchase for 1 PC/MAC | Instant Download | Form",
+    "product_price": "$149.99",
+    "product_star_rating": "4",
+    "product_num_ratings": 1108,
+    "product_url": "https://www.amazon.com/dp/B0DGVQMGBB",
+    "product_photo": "https://images-na.ssl-images-amazon.com/images/I/61phY52G-OL._AC_UL900_SR900,600_.jpg",
+    "rank_change_label": null,
+    "product_category": "Software"
+  },
+  {
+    "rank": 2,
+    "product_asin": "B0DHYGWYJ6",
+    "product_title": "TurboTax Deluxe 2024 Tax Software, Federal & State Tax Return [PC/MAC Download]",
+    "product_price": "$79.99",
+    "product_star_rating": "4.3",
+    "product_num_ratings": 13583,
+    "product_url": "https://www.amazon.com/dp/B0DHYGWYJ6",
+    "product_photo": "https://images-na.ssl-images-amazon.com/images/I/71UbHaUeeUL._AC_UL900_SR900,600_.jpg",
+    "rank_change_label": null,
+    "product_category": "Software"
+  },
+  {
+    "rank": 3,
+    "product_asin": "B07Q33SJDW",
+    "product_title": "Norton 360 Deluxe 2025, Antivirus software for 5 Devices with Auto-Renewal",
+    "product_price": "$24.99",
+    "product_star_rating": "4",
+    "product_num_ratings": 15621,
+    "product_url": "https://www.amazon.com/dp/B07Q33SJDW",
+    "product_photo": "https://images-na.ssl-images-amazon.com/images/I/71dIA+61J2L._AC_UL900_SR900,600_.jpg",
+    "rank_change_label": null,
+    "product_category": "Software"
+  },
+  {
+    "rank": 4,
+    "product_asin": "B0823GT5JG",
+    "product_title": "iFit Train - Monthly Membership",
+    "product_price": "$15.00",
+    "product_star_rating": "3.4",
+    "product_num_ratings": 616,
+    "product_url": "https://www.amazon.com/dp/B0823GT5JG",
+    "product_photo": "https://images-na.ssl-images-amazon.com/images/I/61py58y88zL._AC_UL900_SR900,600_.jpg",
+    "rank_change_label": null,
+    "product_category": "Software"
+  },
+  {
+    "rank": 5,
+    "product_asin": "B09MYJ1R6L",
+    "product_title": "Microsoft System Builder | Windоws 11 Home",
+    "product_price": "$119.99",
+    "product_star_rating": "4",
+    "product_num_ratings": 2027,
+    "product_url": "https://www.amazon.com/dp/B09MYJ1R6L",
+    "product_photo": "https://images-na.ssl-images-amazon.com/images/I/61JfosHunyL._AC_UL900_SR900,600_.jpg",
+    "rank_change_label": null,
+    "product_category": "Software"
+  },
+  {
+    "rank": 6,
+    "product_asin": "B0BB2GF9WW",
+    "product_title": "McAfee Total Protection 5-Device 2025",
+    "product_price": "$19.99",
+    "product_star_rating": "4.3",
+    "product_num_ratings": 1799,
+    "product_url": "https://www.amazon.com/dp/B0BB2GF9WW",
+    "product_photo": "https://images-na.ssl-images-amazon.com/images/I/71VUdZ4iJhL._AC_UL900_SR900,600_.jpg",
+    "rank_change_label": null,
+    "product_category": "Software"
+  },
+  {
+    "rank": 7,
+    "product_asin": "B0DHYHPSMC",
+    "product_title": "TurboTax Home & Business 2024 Tax Software",
+    "product_price": "$129.99",
+    "product_star_rating": "4.3",
+    "product_num_ratings": 3599,
+    "product_url": "https://www.amazon.com/dp/B0DHYHPSMC",
+    "product_photo": "https://images-na.ssl-images-amazon.com/images/I/71b5aAzdXOL._AC_UL900_SR900,600_.jpg",
+    "rank_change_label": null,
+    "product_category": "Software"
+  },
+  {
+    "rank": 8,
+    "product_asin": "B07Q6B5YL5",
+    "product_title": "Norton 360 Premium 2025",
+    "product_price": "$29.99",
+    "product_star_rating": "4.1",
+    "product_num_ratings": 5298,
+    "product_url": "https://www.amazon.com/dp/B07Q6B5YL5",
+    "product_photo": "https://images-na.ssl-images-amazon.com/images/I/71BOIz4Tx1L._AC_UL900_SR900,600_.jpg",
+    "rank_change_label": null,
+    "product_category": "Software"
+  },
+  {
+    "rank": 9,
+    "product_asin": "B0DHYH1R3N",
+    "product_title": "TurboTax Premier 2024 Tax Software",
+    "product_price": "$114.99",
+    "product_star_rating": "4.2",
+    "product_num_ratings": 4896,
+    "product_url": "https://www.amazon.com/dp/B0DHYH1R3N",
+    "product_photo": "https://images-na.ssl-images-amazon.com/images/I/71yj6wGqynL._AC_UL900_SR900,600_.jpg",
+    "rank_change_label": null,
+    "product_category": "Software"
+  },
+  {
+    "rank": 10,
+    "product_asin": "B0CLBV27N2",
+    "product_title": "[Old Version] TurboTax Deluxe 2023",
+    "product_price": "$69.99",
+    "product_star_rating": "4.4",
+    "product_num_ratings": 16338,
+    "product_url": "https://www.amazon.com/dp/B0CLBV27N2",
+    "product_photo": "https://images-na.ssl-images-amazon.com/images/I/719rCYQpjdL._AC_UL900_SR900,600_.jpg",
+    "rank_change_label": null,
+    "product_category": "Software"
+  },
+  {
+    "rank": 11,
+    "product_asin": "B07K98XDX8",
+    "product_title": "McAfee Total Protection 3-Device 2025 Ready",
+    "product_price": "$19.99",
+    "product_star_rating": "4.1",
+    "product_num_ratings": 5861,
+    "product_url": "https://www.amazon.com/dp/B07K98XDX8",
+    "product_photo": "https://images-na.ssl-images-amazon.com/images/I/61RKiI+ILuL._AC_UL900_SR900,600_.jpg",
+    "rank_change_label": null,
+    "product_category": "Software"
+  },
+  {
+    "rank": 12,
+    "product_asin": "B09WCTTXQ6",
+    "product_title": "Windows 11 Pro Upgrade",
+    "product_price": "$99.00",
+    "product_star_rating": "3.8",
+    "product_num_ratings": 695,
+    "product_url": "https://www.amazon.com/dp/B09WCTTXQ6",
+    "product_photo": "https://images-na.ssl-images-amazon.com/images/I/61R6ivLSfrL._AC_UL900_SR900,600_.jpg",
+    "rank_change_label": null,
+    "product_category": "Software"
+  },
+  {
+    "rank": 13,
+    "product_asin": "B076VQ4Y4J",
+    "product_title": "Laplink PCmover Ultimate 11",
+    "product_price": "$41.95",
+    "product_star_rating": "4.2",
+    "product_num_ratings": 5786,
+    "product_url": "https://www.amazon.com/dp/B076VQ4Y4J",
+    "product_photo": "https://images-na.ssl-images-amazon.com/images/I/71U0TfOBbWL._AC_UL900_SR900,600_.jpg",
+    "rank_change_label": null,
+    "product_category": "Software"
+  },
+  // Electronics
+  {
+    "rank": 26,
+    "product_asin": "B0CLBV27N2",
+    "product_title": "Bose QuietComfort Earbuds II",
+    "product_price": "$279.00",
+    "product_star_rating": "4.3",
+    "product_num_ratings": 32158,
+    "product_url": "https://www.amazon.com/dp/B0CLBV27N2",
+    "product_photo": "https://m.media-amazon.com/images/I/61qIEvCy6+L._AC_UY218_.jpg",
+    "rank_change_label": null,
+    "product_category": "Electronics"
+  },
+  {
+    "rank": 27,
+    "product_asin": "B0CHX46H29",
+    "product_title": "Samsung Galaxy Tab S9 FE Android Tablet",
+    "product_price": "$449.99",
+    "product_star_rating": "4.5",
+    "product_num_ratings": 8752,
+    "product_url": "https://www.amazon.com/dp/B0CHX46H29",
+    "product_photo": "https://m.media-amazon.com/images/I/519MwpI6qNL._AC_UY218_.jpg",
+    "rank_change_label": null,
+    "product_category": "Electronics"
+  },
+  {
+    "rank": 28,
+    "product_asin": "B0892H1S89",
+    "product_title": "Sony Alpha a7 IV Full-Frame Mirrorless Camera",
+    "product_price": "$2498.00",
+    "product_star_rating": "4.6",
+    "product_num_ratings": 5604,
+    "product_url": "https://www.amazon.com/dp/B0892H1S89",
+    "product_photo": "https://m.media-amazon.com/images/I/61kkhm9rT4L._AC_UY218_.jpg",
+    "rank_change_label": null,
+    "product_category": "Electronics"
+  },
+  {
+    "rank": 29,
+    "product_asin": "B08V2N3Q1S",
+    "product_title": "Ring Video Doorbell Wired",
+    "product_price": "$64.99",
+    "product_star_rating": "4.7",
+    "product_num_ratings": 41290,
+    "product_url": "https://www.amazon.com/dp/B08V2N3Q1S",
+    "product_photo": "https://m.media-amazon.com/images/I/71bgyic1TQL._AC_UY218_.jpg",
+    "rank_change_label": null,
+    "product_category": "Electronics"
+  },
+  {
+    "rank": 30,
+    "product_asin": "B0823GT5JG",
+    "product_title": "Nintendo Switch OLED Model",
+    "product_price": "$349.99",
+    "product_star_rating": "4.9",
+    "product_num_ratings": 65432,
+    "product_url": "https://www.amazon.com/dp/B0823GT5JG",
+    "product_photo": "https://m.media-amazon.com/images/I/61nqNujSF2L._AC_UY218_.jpg",
+    "rank_change_label": null,
+    "product_category": "Electronics"
+  },
+  {
+    "rank": 31,
+    "product_asin": "B0DHYHPSMC",
+    "product_title": "Kindle Paperwhite (16 GB) – With a 6.8” display",
+    "product_price": "$149.99",
+    "product_star_rating": "4.8",
+    "product_num_ratings": 39856,
+    "product_url": "https://www.amazon.com/dp/B0DHYHPSMC",
+    "product_photo": "https://m.media-amazon.com/images/I/71FWKtSIYUL._AC_SL1500_.jpg",
+    "rank_change_label": null,
+    "product_category": "Electronics"
+  },
+  {
+    "rank": 32,
+    "product_asin": "B07S27F9T5",
+    "product_title": "Microsoft Surface Pro 9 Tablet",
+    "product_price": "$1099.00",
+    "product_star_rating": "4.4",
+    "product_num_ratings": 9802,
+    "product_url": "https://www.amazon.com/dp/B07S27F9T5",
+    "product_photo": "https://m.media-amazon.com/images/I/51YoW9MCplL._AC_UY218_.jpg",
+    "rank_change_label": null,
+    "product_category": "Electronics"
+  },
+  {
+    "rank": 33,
+    "product_asin": "B085521C64",
+    "product_title": "Google Nest Learning Thermostat",
+    "product_price": "$249.00",
+    "product_star_rating": "4.5",
+    "product_num_ratings": 76543,
+    "product_url": "https://www.amazon.com/dp/B085521C64",
+    "product_photo": "https://m.media-amazon.com/images/I/31zBD9vzyuL._AC_UY218_.jpg",
+    "rank_change_label": null,
+    "product_category": "Electronics"
+  },
+  {
+    "rank": 34,
+    "product_asin": "B07Q33SJDA",
+    "product_title": "Crucial MX500 1TB SATA SSD",
+    "product_price": "$79.99",
+    "product_star_rating": "4.8",
+    "product_num_ratings": 123456,
+    "product_url": "https://www.amazon.com/dp/B07Q33SJDA",
+    "product_photo": "https://m.media-amazon.com/images/I/51zhuXxYuRL._AC_UY218_.jpg",
+    "rank_change_label": null,
+    "product_category": "Electronics"
+  },
+  {
+    "rank": 35,
+    "product_asin": "B07C3H7M5K",
+    "product_title": "Fitbit Charge 6 Fitness Tracker",
+    "product_price": "$159.95",
+    "product_star_rating": "4.2",
+    "product_num_ratings": 8900,
+    "product_url": "https://www.amazon.com/dp/B07C3H7M5K",
+    "product_photo": "https://m.media-amazon.com/images/I/61wn2jfhBkL._AC_UY218_.jpg",
+    "rank_change_label": null,
+    "product_category": "Electronics"
+  },
+  {
+    "rank": 36,
+    "product_asin": "B08T9N1C4X",
+    "product_title": "Razer DeathAdder V3 Pro Gaming Mouse",
+    "product_price": "$129.99",
+    "product_star_rating": "4.7",
+    "product_num_ratings": 21500,
+    "product_url": "https://www.amazon.com/dp/B08T9N1C4X",
+    "product_photo": "https://m.media-amazon.com/images/I/71fRKz9pUnL._AC_UY218_.jpg",
+    "rank_change_label": null,
+    "product_category": "Electronics"
+  },
+  // Fashion
+  {
+    "rank": 37,
+    "product_asin": "B09V7Y5Z1Q",
+    "product_title": "Puma Men's Essentials Logo T-Shirt",
+    "product_price": "$19.99",
+    "product_star_rating": "4.6",
+    "product_num_ratings": 14234,
+    "product_url": "https://www.amazon.com/dp/B09V7Y5Z1Q",
+    "product_photo": "https://m.media-amazon.com/images/I/61Aiqa0ZMsL._AC_UY218_.jpg",
+    "rank_change_label": null,
+    "product_category": "Fashion"
+  },
+  {
+    "rank": 38,
+    "product_asin": "B08X2YK1QP",
+    "product_title": "Levi's Women's 721 High Rise Skinny Jeans",
+    "product_price": "$49.99",
+    "product_star_rating": "4.5",
+    "product_num_ratings": 9821,
+    "product_url": "https://www.amazon.com/dp/B08X2YK1QP",
+    "product_photo": "https://m.media-amazon.com/images/I/71O-J4eHjjL._AC_SX385_.jpg",
+    "rank_change_label": null,
+    "product_category": "Fashion"
+  },
+  {
+    "rank": 39,
+    "product_asin": "B07ZQSC6NR",
+    "product_title": "Adidas Men's Ultraboost Running Shoes",
+    "product_price": "$189.99",
+    "product_star_rating": "4.7",
+    "product_num_ratings": 22045,
+    "product_url": "https://www.amazon.com/dp/B07ZQSC6NR",
+    "product_photo": "https://m.media-amazon.com/images/I/41aYlKibEgL._AC_UL320_.jpg",
+    "rank_change_label": null,
+    "product_category": "Fashion"
+  },
+  {
+    "rank": 40,
+    "product_asin": "B09F2H2Q9K",
+    "product_title": "Under Armour Women's Fly-By Running Shorts",
+    "product_price": "$24.99",
+    "product_star_rating": "4.5",
+    "product_num_ratings": 12340,
+    "product_url": "https://www.amazon.com/dp/B09F2H2Q9K",
+    "product_photo": "https://m.media-amazon.com/images/I/41VTVrLNgNL._AC_UL320_.jpg",
+    "rank_change_label": null,
+    "product_category": "Fashion"
+  },
+  {
+    "rank": 41,
+    "product_asin": "B081T8C7CZ",
+    "product_title": "Ray-Ban Rb2132 New Wayfarer Sunglasses",
+    "product_price": "$144.00",
+    "product_star_rating": "4.8",
+    "product_num_ratings": 32145,
+    "product_url": "https://www.amazon.com/dp/B081T8C7CZ",
+    "product_photo": "https://m.media-amazon.com/images/I/4108kG4wBHL._AC_UL320_.jpg",
+    "rank_change_label": null,
+    "product_category": "Fashion"
+  },
+  {
+    "rank": 42,
+    "product_asin": "B093T8R4LF",
+    "product_title": "Columbia Women's Arcadia II Rain Jacket",
+    "product_price": "$89.99",
+    "product_star_rating": "4.6",
+    "product_num_ratings": 11876,
+    "product_url": "https://www.amazon.com/dp/B093T8R4LF",
+    "product_photo": "https://m.media-amazon.com/images/I/71iaxOLLNxL._AC_UL320_.jpg",
+    "rank_change_label": null,
+    "product_category": "Fashion"
+  },
+  {
+    "rank": 43,
+    "product_asin": "B08ZHKZP6V",
+    "product_title": "Fossil Men's Grant Stainless Steel Chronograph Watch",
+    "product_price": "$129.00",
+    "product_star_rating": "4.7",
+    "product_num_ratings": 10324,
+    "product_url": "https://www.amazon.com/dp/B08ZHKZP6V",
+    "product_photo": "https://m.media-amazon.com/images/I/71acHSpHXDL._AC_UL320_.jpg",
+    "rank_change_label": null,
+    "product_category": "Fashion"
+  },
+  {
+    "rank": 44,
+    "product_asin": "B099YQ7D5Z",
+    "product_title": "Puma Women's 4Keeps Sports Bra",
+    "product_price": "$29.99",
+    "product_star_rating": "4.4",
+    "product_num_ratings": 8674,
+    "product_url": "https://www.amazon.com/dp/B099YQ7D5Z",
+    "product_photo": "https://m.media-amazon.com/images/I/71AIXsLShFL._AC_UL320_.jpg",
+    "rank_change_label": null,
+    "product_category": "Fashion"
+  },
+  {
+    "rank": 45,
+    "product_asin": "B07H2RR55Q",
+    "product_title": "Nike Men's Dri-FIT Training Pants",
+    "product_price": "$54.99",
+    "product_star_rating": "4.6",
+    "product_num_ratings": 15230,
+    "product_url": "https://www.amazon.com/dp/B07H2RR55Q",
+    "product_photo": "https://m.media-amazon.com/images/I/61-YJIH6DPL._AC_UL320_.jpg",
+    "rank_change_label": null,
+    "product_category": "Fashion"
+  },
+  {
+    "rank": 46,
+    "product_asin": "B0B7YQTYFQ",
+    "product_title": "Michael Kors Jet Set Travel Large Tote Bag",
+    "product_price": "$149.99",
+    "product_star_rating": "4.7",
+    "product_num_ratings": 5630,
+    "product_url": "https://www.amazon.com/dp/B0B7YQTYFQ",
+    "product_photo": "https://m.media-amazon.com/images/I/81vZwzkiHnL._AC_SX425_.jpg",
+    "rank_change_label": null,
+    "product_category": "Fashion"
+  },
+  // Beauty
+  {
+    "rank": 47,
+    "product_asin": "B07Z7LZ9T9",
+    "product_title": "Olaplex No.3 Hair Perfector",
+    "product_price": "$30.00",
+    "product_star_rating": "4.7",
+    "product_num_ratings": 94231,
+    "product_url": "https://www.amazon.com/dp/B07Z7LZ9T9",
+    "product_photo": "https://m.media-amazon.com/images/I/61OLMvoFOHL._AC_UL320_.jpg",
+    "rank_change_label": null,
+    "product_category": "Beauty"
+  },
+  {
+    "rank": 48,
+    "product_asin": "B00I9ZW7ME",
+    "product_title": "CeraVe Hydrating Facial Cleanser",
+    "product_price": "$15.99",
+    "product_star_rating": "4.8",
+    "product_num_ratings": 120432,
+    "product_url": "https://www.amazon.com/dp/B00I9ZW7ME",
+    "product_photo": "https://m.media-amazon.com/images/I/51DbQev1thL._AC_UL320_.jpg",
+    "rank_change_label": null,
+    "product_category": "Beauty"
+  },
+  {
+    "rank": 49,
+    "product_asin": "B07L6NK8R9",
+    "product_title": "Revlon One-Step Volumizer Plus 2.0 Hair Dryer and Hot Air Brush",
+    "product_price": "$42.99",
+    "product_star_rating": "4.6",
+    "product_num_ratings": 245678,
+    "product_url": "https://www.amazon.com/dp/B07L6NK8R9",
+    "product_photo": "https://m.media-amazon.com/images/I/61WHu8lyJGL._AC_UL320_.jpg",
+    "rank_change_label": null,
+    "product_category": "Beauty"
+  },
+  {
+    "rank": 50,
+    "product_asin": "B004Y9GY5A",
+    "product_title": "Cetaphil Daily Facial Cleanser",
+    "product_price": "$14.49",
+    "product_star_rating": "4.7",
+    "product_num_ratings": 103245,
+    "product_url": "https://www.amazon.com/dp/B004Y9GY5A",
+    "product_photo": "https://m.media-amazon.com/images/I/61AOpW073sL._AC_UL320_.jpg",
+    "rank_change_label": null,
+    "product_category": "Beauty"
+  },
+  {
+    "rank": 51,
+    "product_asin": "B00H2LVUQ2",
+    "product_title": "Neutrogena Hydro Boost Water Gel",
+    "product_price": "$18.99",
+    "product_star_rating": "4.8",
+    "product_num_ratings": 87654,
+    "product_url": "https://www.amazon.com/dp/B00H2LVUQ2",
+    "product_photo": "https://m.media-amazon.com/images/I/71h8bcec4eL._AC_UL320_.jpg",
+    "rank_change_label": null,
+    "product_category": "Beauty"
+  },
+  {
+    "rank": 52,
+    "product_asin": "B00GB85JR4",
+    "product_title": "L'Oréal Paris Makeup Voluminous Original Mascara",
+    "product_price": "$9.99",
+    "product_star_rating": "4.6",
+    "product_num_ratings": 154320,
+    "product_url": "https://www.amazon.com/dp/B00GB85JR4",
+    "product_photo": "https://m.media-amazon.com/images/I/61t-xB3XY4L._AC_UL320_.jpg",
+    "rank_change_label": null,
+    "product_category": "Beauty"
+  },
+  {
+    "rank": 53,
+    "product_asin": "B003UBVHU6",
+    "product_title": "Aquaphor Healing Ointment",
+    "product_price": "$13.99",
+    "product_star_rating": "4.9",
+    "product_num_ratings": 210543,
+    "product_url": "https://www.amazon.com/dp/B003UBVHU6",
+    "product_photo": "https://m.media-amazon.com/images/I/61GDtxif9-L._AC_UL320_.jpg",
+    "rank_change_label": null,
+    "product_category": "Beauty"
+  },
+  {
+    "rank": 54,
+    "product_asin": "B01M7Y0WOT",
+    "product_title": "Mario Badescu Facial Spray with Aloe, Herbs and Rosewater",
+    "product_price": "$7.00",
+    "product_star_rating": "4.7",
+    "product_num_ratings": 65432,
+    "product_url": "https://www.amazon.com/dp/B01M7Y0WOT",
+    "product_photo": "https://m.media-amazon.com/images/I/71pdh0rJGsL._AC_UL320_.jpg",
+    "rank_change_label": null,
+    "product_category": "Beauty"
+  },
+  {
+    "rank": 55,
+    "product_asin": "B01LTHXA5O",
+    "product_title": "Maybelline SuperStay Matte Ink Liquid Lipstick",
+    "product_price": "$8.99",
+    "product_star_rating": "4.7",
+    "product_num_ratings": 123876,
+    "product_url": "https://www.amazon.com/dp/B01LTHXA5O",
+    "product_photo": "https://m.media-amazon.com/images/I/61UkgNmj1gL._AC_UL320_.jpg",
+    "rank_change_label": null,
+    "product_category": "Beauty"
+  },
+  // Fitness
+  {
+    "rank": 57,
+    "product_asin": "B00K6OSD1O",
+    "product_title": "Fit Simplify Resistance Loop Exercise Bands",
+    "product_price": "$12.95",
+    "product_star_rating": "4.7",
+    "product_num_ratings": 145678,
+    "product_url": "https://www.amazon.com/dp/B00K6OSD1O",
+    "product_photo": "https://m.media-amazon.com/images/I/71S4-NjoTDL._AC_UL320_.jpg",
+    "rank_change_label": null,
+    "product_category": "Fitness"
+  },
+  {
+    "rank": 58,
+    "product_asin": "B07YVLW7YK",
+    "product_title": "Sunny Health & Fitness SF-B1002 Belt Drive Indoor Cycling Bike",
+    "product_price": "$299.99",
+    "product_star_rating": "4.6",
+    "product_num_ratings": 23456,
+    "product_url": "https://www.amazon.com/dp/B07YVLW7YK",
+    "product_photo": "https://m.media-amazon.com/images/I/71BiDJw4yjL._AC_UY218_.jpg",
+    "rank_change_label": null,
+    "product_category": "Fitness"
+  },
+  {
+    "rank": 59,
+    "product_asin": "B07X5T5W99",
+    "product_title": "TRX GO Suspension Trainer System",
+    "product_price": "$99.95",
+    "product_star_rating": "4.8",
+    "product_num_ratings": 18345,
+    "product_url": "https://www.amazon.com/dp/B07X5T5W99",
+    "product_photo": "https://m.media-amazon.com/images/I/71gzgps13PL._AC_UL320_.jpg",
+    "rank_change_label": null,
+    "product_category": "Fitness"
+  },
+  {
+    "rank": 60,
+    "product_asin": "B01N6S4A2U",
+    "product_title": "Perfect Fitness Ab Carver Pro Roller",
+    "product_price": "$39.99",
+    "product_star_rating": "4.7",
+    "product_num_ratings": 54321,
+    "product_url": "https://www.amazon.com/dp/B01N6S4A2U",
+    "product_photo": "https://m.media-amazon.com/images/I/51bsIB5M5SL._AC_UL320_.jpg",
+    "rank_change_label": null,
+    "product_category": "Fitness"
+  },
+  {
+    "rank": 61,
+    "product_asin": "B08H7ZRFYN",
+    "product_title": "Bowflex SelectTech 552 Adjustable Dumbbells",
+    "product_price": "$429.00",
+    "product_star_rating": "4.8",
+    "product_num_ratings": 65432,
+    "product_url": "https://www.amazon.com/dp/B08H7ZRFYN",
+    "product_photo": "https://m.media-amazon.com/images/I/81NH4CoRyjL._AC_UL320_.jpg",
+    "rank_change_label": null,
+    "product_category": "Fitness"
+  },
+  {
+    "rank": 62,
+    "product_asin": "B00XM0YGW8",
+    "product_title": "ProsourceFit Puzzle Exercise Mat 24 Sq Ft",
+    "product_price": "$29.99",
+    "product_star_rating": "4.6",
+    "product_num_ratings": 43210,
+    "product_url": "https://www.amazon.com/dp/B00XM0YGW8",
+    "product_photo": "https://m.media-amazon.com/images/I/81fN-vJAKUL._AC_UL320_.jpg",
+    "rank_change_label": null,
+    "product_category": "Fitness"
+  },
+  {
+    "rank": 63,
+    "product_asin": "B07P9QFNJR",
+    "product_title": "RENPHO Bluetooth Body Fat Scale",
+    "product_price": "$24.99",
+    "product_star_rating": "4.7",
+    "product_num_ratings": 78901,
+    "product_url": "https://www.amazon.com/dp/B07P9QFNJR",
+    "product_photo": "https://m.media-amazon.com/images/I/61ju5KUNdFL._AC_UL320_.jpg",
+    "rank_change_label": null,
+    "product_category": "Fitness"
+  },
+  {
+    "rank": 64,
+    "product_asin": "B07D1JJBJR",
+    "product_title": "NordicTrack T Series Treadmill",
+    "product_price": "$649.00",
+    "product_star_rating": "4.6",
+    "product_num_ratings": 29876,
+    "product_url": "https://www.amazon.com/dp/B07D1JJBJR",
+    "product_photo": "https://m.media-amazon.com/images/I/31chdUGXSAL._AC_UY218_.jpg",
+    "rank_change_label": null,
+    "product_category": "Fitness"
+  },
+  {
+    "rank": 66,
+    "product_asin": "B01N5UW254",
+    "product_title": "CAP Barbell Coated Dumbbell Set with Rack",
+    "product_price": "$159.99",
+    "product_star_rating": "4.7",
+    "product_num_ratings": 27654,
+    "product_url": "https://www.amazon.com/dp/B01N5UW254",
+    "product_photo": "https://m.media-amazon.com/images/I/71HEqww6NtL._AC_UL320_.jpg",
+    "rank_change_label": null,
+    "product_category": "Fitness"
+  },
+  // Appliances
+  {
+    "rank": 67,
+    "product_asin": "B08GYKNCCP",
+    "product_title": "Instant Pot Duo Crisp 11-in-1 Air Fryer and Electric Pressure Cooker Combo",
+    "product_price": "$199.95",
+    "product_star_rating": "4.8",
+    "product_num_ratings": 54321,
+    "product_url": "https://www.amazon.com/dp/B08GYKNCCP",
+    "product_photo": "https://m.media-amazon.com/images/I/81vc3qXKPpL._AC_UY218_.jpg",
+    "rank_change_label": null,
+    "product_category": "Appliances"
+  },
+  {
+    "rank": 68,
+    "product_asin": "B07Y2H7M6X",
+    "product_title": "Ninja Foodi 9-in-1 Pressure Cooker and Air Fryer",
+    "product_price": "$179.99",
+    "product_star_rating": "4.7",
+    "product_num_ratings": 67890,
+    "product_url": "https://www.amazon.com/dp/B07Y2H7M6X",
+    "product_photo": "https://m.media-amazon.com/images/I/71qaNsaMkpL._AC_UY218_.jpg",
+    "rank_change_label": null,
+    "product_category": "Appliances"
+  },
+  {
+    "rank": 69,
+    "product_asin": "B00YGZ96L0",
+    "product_title": "iRobot Roomba 694 Robot Vacuum",
+    "product_price": "$274.99",
+    "product_star_rating": "4.6",
+    "product_num_ratings": 123456,
+    "product_url": "https://www.amazon.com/dp/B00YGZ96L0",
+    "product_photo": "https://m.media-amazon.com/images/I/71avpoyVU5L._AC_UY218_.jpg",
+    "rank_change_label": null,
+    "product_category": "Appliances"
+  },
+  {
+    "rank": 70,
+    "product_asin": "B08T5QVT1G",
+    "product_title": "COSORI Pro II Air Fryer Oven Combo, 5.8QT",
+    "product_price": "$129.99",
+    "product_star_rating": "4.8",
+    "product_num_ratings": 87654,
+    "product_url": "https://www.amazon.com/dp/B08T5QVT1G",
+    "product_photo": "https://m.media-amazon.com/images/I/81xlEWE3e+L._AC_UY218_.jpg",
+    "rank_change_label": null,
+    "product_category": "Appliances"
+  },
+  {
+    "rank": 71,
+    "product_asin": "B01N6S4A2U",
+    "product_title": "Dyson V11 Torque Drive Cordless Vacuum Cleaner",
+    "product_price": "$599.99",
+    "product_star_rating": "4.8",
+    "product_num_ratings": 45678,
+    "product_url": "https://www.amazon.com/dp/B01N6S4A2U",
+    "product_photo": "https://m.media-amazon.com/images/I/614v0n4AGDL._AC_UY218_.jpg",
+    "rank_change_label": null,
+    "product_category": "Appliances"
+  },
+  {
+    "rank": 72,
+    "product_asin": "B0858W8W6S",
+    "product_title": "Keurig K-Slim Coffee Maker, Single Serve K-Cup Pod Brewer",
+    "product_price": "$129.99",
+    "product_star_rating": "4.7",
+    "product_num_ratings": 65432,
+    "product_url": "https://www.amazon.com/dp/B0858W8W6S",
+    "product_photo": "https://m.media-amazon.com/images/I/61wE84vd-FL._AC_UL320_.jpg",
+    "rank_change_label": null,
+    "product_category": "Appliances"
+  },
+  {
+    "rank": 73,
+    "product_asin": "B07V3MXL2N",
+    "product_title": "BLACK+DECKER Crush Master 10-Speed Blender",
+    "product_price": "$34.99",
+    "product_star_rating": "4.5",
+    "product_num_ratings": 23456,
+    "product_url": "https://www.amazon.com/dp/B07V3MXL2N",
+    "product_photo": "https://m.media-amazon.com/images/I/71qMtCUmDuL._AC_UY218_.jpg",
+    "rank_change_label": null,
+    "product_category": "Appliances"
+  },
+  {
+    "rank": 74,
+    "product_asin": "B07YF9SGBW",
+    "product_title": "Frigidaire Compact Ice Maker",
+    "product_price": "$129.99",
+    "product_star_rating": "4.6",
+    "product_num_ratings": 32109,
+    "product_url": "https://www.amazon.com/dp/B07YF9SGBW",
+    "product_photo": "https://m.media-amazon.com/images/I/717Bh1wcU5L._AC_UY218_.jpg",
+    "rank_change_label": null,
+    "product_category": "Appliances"
+  },
+  {
+    "rank": 75,
+    "product_asin": "B08N5LNQCX",
+    "product_title": "Euhomy Countertop Ice Maker Machine",
+    "product_price": "$139.99",
+    "product_star_rating": "4.6",
+    "product_num_ratings": 27890,
+    "product_url": "https://www.amazon.com/dp/B08N5LNQCX",
+    "product_photo": "https://m.media-amazon.com/images/I/717Bh1wcU5L._AC_UY218_.jpg",
+    "rank_change_label": null,
+    "product_category": "Appliances"
+  },
+]
 
-
-
-// // Data for Fitness
-// [
-//   {
-//     "rank": 23,
-//     "asin": "B0892H1S89",
-//     "product_title": "Gaiam Essentials Premium Yoga Mat",
-//     "product_price": "$19.99",
-//     "product_star_rating": "4.6",
-//     "product_num_ratings": 45678,
-//     "product_url": "https://www.amazon.com/dp/B0892H1S89",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/71gW3J48tEL._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Fitness"
-//   },
-//   {
-//     "rank": 24,
-//     "asin": "B07S27F9T5",
-//     "product_title": "Resistance Bands Set for Exercise",
-//     "product_price": "$29.99",
-//     "product_star_rating": "4.5",
-//     "product_num_ratings": 28901,
-//     "product_url": "https://www.amazon.com/dp/B07S27F9T5",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/71f-0e980TL._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Fitness"
-//   },
-//   {
-//     "rank": 25,
-//     "asin": "B0BJQ74N3X",
-//     "product_title": "Bala Bangles Wearable Weights",
-//     "product_price": "$65.00",
-//     "product_star_rating": "4.7",
-//     "product_num_ratings": 18275,
-//     "product_url": "https://www.amazon.com/dp/B0BJQ74N3X",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/61o3tL2sHML._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Fitness"
-//   },
-//   {
-//     "rank": 26,
-//     "asin": "B0B8Y18C6T",
-//     "product_title": "TheraGun Mini Handheld Massage Gun",
-//     "product_price": "$199.00",
-//     "product_star_rating": "4.8",
-//     "product_num_ratings": 152841,
-//     "product_url": "https://www.amazon.com/dp/B0B8Y18C6T",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/61f1sL7bLgL._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Fitness"
-//   },
-//   {
-//     "rank": 27,
-//     "asin": "B07X94Y16H",
-//     "product_title": "BalanceFrom All-Purpose Dumbbell Set",
-//     "product_price": "$89.99",
-//     "product_star_rating": "4.6",
-//     "product_num_ratings": 31200,
-//     "product_url": "https://www.amazon.com/dp/B07X94Y16H",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/71h3K750QHL._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Fitness"
-//   },
-//   {
-//     "rank": 28,
-//     "asin": "B09WCTTXQ6",
-//     "product_title": "Fitbit Charge 6 Advanced Fitness Tracker",
-//     "product_price": "$159.95",
-//     "product_star_rating": "4.8",
-//     "product_num_ratings": 28543,
-//     "product_url": "https://www.amazon.com/dp/B09WCTTXQ6",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/71R6ivLSfrL._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Fitness"
-//   },
-//   {
-//     "rank": 29,
-//     "asin": "B07Q6B5YL5",
-//     "product_title": "Jump Rope with Memory Foam Handles",
-//     "product_price": "$12.99",
-//     "product_star_rating": "4.7",
-//     "product_num_ratings": 98123,
-//     "product_url": "https://www.amazon.com/dp/B07Q6B5YL5",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/61BOIz4Tx1L._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Fitness"
-//   },
-//   {
-//     "rank": 30,
-//     "asin": "B0DHYGWYJ6",
-//     "product_title": "TriggerPoint GRID Foam Roller",
-//     "product_price": "$34.99",
-//     "product_star_rating": "4.6",
-//     "product_num_ratings": 15478,
-//     "product_url": "https://www.amazon.com/dp/B0DHYGWYJ6",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/71UbHaUeeUL._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Fitness"
-//   },
-//   {
-//     "rank": 31,
-//     "asin": "B07P5J2T5G",
-//     "product_title": "BalanceFrom Yoga Block and Strap Set",
-//     "product_price": "$16.99",
-//     "product_star_rating": "4.5",
-//     "product_num_ratings": 56789,
-//     "product_url": "https://www.amazon.com/dp/B07P5J2T5G",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/710l+f5+TNL._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Fitness"
-//   },
-//   {
-//     "rank": 32,
-//     "asin": "B0DGVQMGBB",
-//     "product_title": "Gaiam Grippy Yoga Socks",
-//     "product_price": "$11.99",
-//     "product_star_rating": "4.6",
-//     "product_num_ratings": 3108,
-//     "product_url": "https://www.amazon.com/dp/B0DGVQMGBB",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/61phY52G-OL._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Fitness"
-//   },
-//   {
-//     "rank": 33,
-//     "asin": "B07K98XDX8",
-//     "product_title": "URBNFit Exercise Ball",
-//     "product_price": "$22.99",
-//     "product_star_rating": "4.5",
-//     "product_num_ratings": 49876,
-//     "product_url": "https://www.amazon.com/dp/B07K98XDX8",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/61RKiI+ILuL._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Fitness"
-//   },
-//   {
-//     "rank": 34,
-//     "asin": "B07Q33SJDW",
-//     "product_title": "Renpho Smart Digital Bathroom Scale",
-//     "product_price": "$28.99",
-//     "product_star_rating": "4.7",
-//     "product_num_ratings": 215621,
-//     "product_url": "https://www.amazon.com/dp/B07Q33SJDW",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/71dIA+61J2L._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Fitness"
-//   },
-//   {
-//     "rank": 35,
-//     "asin": "B09MYJ1R6L",
-//     "product_title": "Hydro Flask Wide Mouth Water Bottle",
-//     "product_price": "$44.95",
-//     "product_star_rating": "4.6",
-//     "product_num_ratings": 56027,
-//     "product_url": "https://www.amazon.com/dp/B09MYJ1R6L",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/61JfosHunyL._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Fitness"
-//   },
-//   {
-//     "rank": 36,
-//     "asin": "B0BB2GF9WW",
-//     "product_title": "ATIVAFIT Adjustable Kettlebell",
-//     "product_price": "$129.00",
-//     "product_star_rating": "4.7",
-//     "product_num_ratings": 89123,
-//     "product_url": "https://www.amazon.com/dp/B0BB2GF9WW",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/71VUdZ4iJhL._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Fitness"
-//   },
-//   {
-//     "rank": 37,
-//     "asin": "B0CLBV27N2",
-//     "product_title": "Bowflex SelectTech Adjustable Dumbbells",
-//     "product_price": "$429.00",
-//     "product_star_rating": "4.3",
-//     "product_num_ratings": 32158,
-//     "product_url": "https://www.amazon.com/dp/B0CLBV27N2",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/719rCYQpjdL._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Fitness"
-//   },
-//   {
-//     "rank": 38,
-//     "asin": "B076VQ4Y4J",
-//     "product_title": "Puma Women's Sports Bra",
-//     "product_price": "$29.99",
-//     "product_star_rating": "4.5",
-//     "product_num_ratings": 8752,
-//     "product_url": "https://www.amazon.com/dp/B076VQ4Y4J",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/71U0TfOBbWL._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Fitness"
-//   },
-//   {
-//     "rank": 39,
-//     "asin": "B0892H1S89",
-//     "product_title": "GoPro HERO12 Action Camera",
-//     "product_price": "$399.00",
-//     "product_star_rating": "4.6",
-//     "product_num_ratings": 5604,
-//     "product_url": "https://www.amazon.com/dp/B0892H1S89",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/71gW3J48tEL._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Fitness"
-//   },
-//   {
-//     "rank": 40,
-//     "asin": "B08V2N3Q1S",
-//     "product_title": "Sunny Health & Fitness Indoor Cycling Bike",
-//     "product_price": "$399.00",
-//     "product_star_rating": "4.7",
-//     "product_num_ratings": 41290,
-//     "product_url": "https://www.amazon.com/dp/B08V2N3Q1S",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/61N+4567L._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Fitness"
-//   },
-//   {
-//     "rank": 41,
-//     "asin": "B0823GT5JG",
-//     "product_title": "Sportneer 22 lbs. Adjustable Dumbbell",
-//     "product_price": "$89.99",
-//     "product_star_rating": "4.9",
-//     "product_num_ratings": 65432,
-//     "product_url": "https://www.amazon.com/dp/B0823GT5JG",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/61py58y88zL._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Fitness"
-//   },
-//   {
-//     "rank": 42,
-//     "asin": "B0DHYHPSMC",
-//     "product_title": "Under Armour Men's Tech 2.0 T-Shirt",
-//     "product_price": "$25.00",
-//     "product_star_rating": "4.8",
-//     "product_num_ratings": 39856,
-//     "product_url": "https://www.amazon.com/dp/B0DHYHPSMC",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/71b5aAzdXOL._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Fitness"
-//   },
-//   {
-//     "rank": 43,
-//     "asin": "B07S27F9T5",
-//     "product_title": "Sunny Health & Fitness Mini Stepper with Resistance Bands",
-//     "product_price": "$69.99",
-//     "product_star_rating": "4.4",
-//     "product_num_ratings": 9802,
-//     "product_url": "https://www.amazon.com/dp/B07S27F9T5",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/71f-0e980TL._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Fitness"
-//   },
-//   {
-//     "rank": 44,
-//     "asin": "B085521C64",
-//     "product_title": "Manduka PROlite Yoga Mat",
-//     "product_price": "$119.99",
-//     "product_star_rating": "4.5",
-//     "product_num_ratings": 76543,
-//     "product_url": "https://www.amazon.com/dp/B085521C64",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/7123L5678L._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Fitness"
-//   }
-// ]
-// // Data for Appliances
-// [
-//   {
-//     "rank": 25,
-//     "asin": "B085521C64",
-//     "product_title": "Instant Pot Duo Plus 9-in-1 Electric Pressure Cooker",
-//     "product_price": "$79.95",
-//     "product_star_rating": "4.7",
-//     "product_num_ratings": 112345,
-//     "product_url": "https://www.amazon.com/dp/B085521C64",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/7123L5678L._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Appliances"
-//   },
-//   {
-//     "rank": 26,
-//     "asin": "B08V2N3Q1S",
-//     "product_title": "Amazon Basics Alexa-compatible Smart Plug",
-//     "product_price": "$9.99",
-//     "product_star_rating": "4.6",
-//     "product_num_ratings": 34567,
-//     "product_url": "https://www.amazon.com/dp/B08V2N3Q1S",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/61N+4567L._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Appliances"
-//   },
-//   {
-//     "rank": 27,
-//     "asin": "B07P5J2T5G",
-//     "product_title": "Cosori Pro II 5.8-Quart Smart Air Fryer",
-//     "product_price": "$129.99",
-//     "product_star_rating": "4.7",
-//     "product_num_ratings": 56789,
-//     "product_url": "https://www.amazon.com/dp/B07P5J2T5G",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/710l+f5+TNL._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Appliances"
-//   },
-//   {
-//     "rank": 28,
-//     "asin": "B0DHYGWYJ6",
-//     "product_title": "Ninja Professional Plus Blender with Auto-iQ",
-//     "product_price": "$99.99",
-//     "product_star_rating": "4.8",
-//     "product_num_ratings": 45123,
-//     "product_url": "https://www.amazon.com/dp/B0DHYGWYJ6",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/71UbHaUeeUL._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Appliances"
-//   },
-//   {
-//     "rank": 29,
-//     "asin": "B09MYJ1R6L",
-//     "product_title": "Keurig K-Mini Single Serve Coffee Maker",
-//     "product_price": "$79.99",
-//     "product_star_rating": "4.5",
-//     "product_num_ratings": 98765,
-//     "product_url": "https://www.amazon.com/dp/B09MYJ1R6L",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/61JfosHunyL._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Appliances"
-//   },
-//   {
-//     "rank": 30,
-//     "asin": "B0DGVQMGBB",
-//     "product_title": "KitchenAid Artisan Series 5 Quart Stand Mixer",
-//     "product_price": "$449.00",
-//     "product_star_rating": "4.9",
-//     "product_num_ratings": 15678,
-//     "product_url": "https://www.amazon.com/dp/B0DGVQMGBB",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/61phY52G-OL._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Appliances"
-//   },
-//   {
-//     "rank": 31,
-//     "asin": "B0892H1S89",
-//     "product_title": "Shark ION Robot Vacuum AV751",
-//     "product_price": "$229.00",
-//     "product_star_rating": "4.4",
-//     "product_num_ratings": 76543,
-//     "product_url": "https://www.amazon.com/dp/B0892H1S89",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/71gW3J48tEL._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Appliances"
-//   },
-//   {
-//     "rank": 32,
-//     "asin": "B07K98XDX8",
-//     "product_title": "Vitamix Explorian Blender E310",
-//     "product_price": "$289.95",
-//     "product_star_rating": "4.8",
-//     "product_num_ratings": 3108,
-//     "product_url": "https://www.amazon.com/dp/B07K98XDX8",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/61RKiI+ILuL._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Appliances"
-//   },
-//   {
-//     "rank": 33,
-//     "asin": "B07Q6B5YL5",
-//     "product_title": "Hamilton Beach 2-Slice Toaster",
-//     "product_price": "$24.99",
-//     "product_star_rating": "4.3",
-//     "product_num_ratings": 123456,
-//     "product_url": "https://www.amazon.com/dp/B07Q6B5YL5",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/61BOIz4Tx1L._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Appliances"
-//   },
-//   {
-//     "rank": 34,
-//     "asin": "B085521C64",
-//     "product_title": "Whynter 14,000 BTU Portable Air Conditioner",
-//     "product_price": "$429.00",
-//     "product_star_rating": "4.2",
-//     "product_num_ratings": 9802,
-//     "product_url": "https://www.amazon.com/dp/B085521C64",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/7123L5678L._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Appliances"
-//   },
-//   {
-//     "rank": 35,
-//     "asin": "B08T9N1C4X",
-//     "product_title": "Black+Decker 1.1 Cu. ft. Microwave Oven",
-//     "product_price": "$99.99",
-//     "product_star_rating": "4.5",
-//     "product_num_ratings": 152841,
-//     "product_url": "https://www.amazon.com/dp/B08T9N1C4X",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/71YvU00U7mL._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Appliances"
-//   },
-//   {
-//     "rank": 36,
-//     "asin": "B0CLBV27N2",
-//     "product_title": "LEVOIT Air Purifier for Home Allergies",
-//     "product_price": "$89.99",
-//     "product_star_rating": "4.8",
-//     "product_num_ratings": 11080,
-//     "product_url": "https://www.amazon.com/dp/B0CLBV27N2",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/719rCYQpjdL._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Appliances"
-//   },
-//   {
-//     "rank": 37,
-//     "asin": "B07C3H7M5K",
-//     "product_title": "Magic Bullet Blender",
-//     "product_price": "$39.99",
-//     "product_star_rating": "4.5",
-//     "product_num_ratings": 215621,
-//     "product_url": "https://www.amazon.com/dp/B07C3H7M5K",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/81B-7G4LGL._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Appliances"
-//   },
-//   {
-//     "rank": 38,
-//     "asin": "B0892G1S8L",
-//     "product_title": "Cuisinart TOA-60 Convection Toaster Oven Air Fryer",
-//     "product_price": "$229.95",
-//     "product_star_rating": "4.6",
-//     "product_num_ratings": 18900,
-//     "product_url": "https://www.amazon.com/dp/B0892G1S8L",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/71gW3J48tEL._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Appliances"
-//   },
-//   {
-//     "rank": 39,
-//     "asin": "B0823GT5JG",
-//     "product_title": "OVENTE Electric Kettle 1.7L",
-//     "product_price": "$21.99",
-//     "product_star_rating": "4.4",
-//     "product_num_ratings": 56027,
-//     "product_url": "https://www.amazon.com/dp/B0823GT5JG",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/61py58y88zL._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Appliances"
-//   },
-//   {
-//     "rank": 40,
-//     "asin": "B0BB2GF9WW",
-//     "product_title": "Frigidaire EFIC103 Portable Compact Ice Maker",
-//     "product_price": "$119.99",
-//     "product_star_rating": "4.5",
-//     "product_num_ratings": 25678,
-//     "product_url": "https://www.amazon.com/dp/B0BB2GF9WW",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/71VUdZ4iJhL._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Appliances"
-//   },
-//   {
-//     "rank": 41,
-//     "asin": "B07S27F9T5",
-//     "product_title": "Dyson V11 Animal Cordless Stick Vacuum",
-//     "product_price": "$599.00",
-//     "product_star_rating": "4.7",
-//     "product_num_ratings": 41290,
-//     "product_url": "https://www.amazon.com/dp/B07S27F9T5",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/71f-0e980TL._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Appliances"
-//   },
-//   {
-//     "rank": 42,
-//     "asin": "B07Q33SJDA",
-//     "product_title": "Crock-Pot 7-Quart Manual Slow Cooker",
-//     "product_price": "$44.99",
-//     "product_star_rating": "4.6",
-//     "product_num_ratings": 15478,
-//     "product_url": "https://www.amazon.com/dp/B07Q33SJDA",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/71dIA+61J2L._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Appliances"
-//   },
-//   {
-//     "rank": 43,
-//     "asin": "B088R5W38K",
-//     "product_title": "GE Profile Opal Countertop Nugget Ice Maker",
-//     "product_price": "$529.00",
-//     "product_star_rating": "4.4",
-//     "product_num_ratings": 8945,
-//     "product_url": "https://www.amazon.com/dp/B088R5W38K",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/61XkL9h04QL._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Appliances"
-//   },
-//   {
-//     "rank": 44,
-//     "asin": "B09WCTTXQ6",
-//     "product_title": "Instant Pot Vortex 4-in-1 Air Fryer Toaster Oven",
-//     "product_price": "$99.99",
-//     "product_star_rating": "4.7",
-//     "product_num_ratings": 31200,
-//     "product_url": "https://www.amazon.com/dp/B09WCTTXQ6",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/71R6ivLSfrL._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Appliances"
-//   },
-//   {
-//     "rank": 45,
-//     "asin": "B076VQ4Y4J",
-//     "product_title": "Aroma Housewares Rice Cooker, Food Steamer",
-//     "product_price": "$29.99",
-//     "product_star_rating": "4.5",
-//     "product_num_ratings": 67890,
-//     "product_url": "https://www.amazon.com/dp/B076VQ4Y4J",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/71U0TfOBbWL._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Appliances"
-//   },
-//   {
-//     "rank": 46,
-//     "asin": "B07X94Y16H",
-//     "product_title": "Bissell CrossWave All-in-One Multi-Surface Cleaner",
-//     "product_price": "$249.99",
-//     "product_star_rating": "4.6",
-//     "product_num_ratings": 28543,
-//     "product_url": "https://www.amazon.com/dp/B07X94Y16H",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/71h3K750QHL._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Appliances"
-//   }
-// ]
-// // Data for Electronics
-// [
-//   {
-//     "rank": 14,
-//     "asin": "B0BJQ74N3X",
-//     "product_title": "Roku Express 4K Streaming Media Player",
-//     "product_price": "$29.99",
-//     "product_star_rating": "4.7",
-//     "product_num_ratings": 18275,
-//     "product_url": "https://www.amazon.com/dp/B0BJQ74N3X",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/61o3tL2sHML._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Electronics"
-//   },
-//   {
-//     "rank": 15,
-//     "asin": "B0B8Y18C6T",
-//     "product_title": "Apple AirPods Pro (2nd Generation) Wireless Earbuds",
-//     "product_price": "$199.00",
-//     "product_star_rating": "4.8",
-//     "product_num_ratings": 152841,
-//     "product_url": "https://www.amazon.com/dp/B0B8Y18C6T",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/61f1sL7bLgL._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Electronics"
-//   },
-//   {
-//     "rank": 16,
-//     "asin": "B07X94Y16H",
-//     "product_title": "Anker Portable Charger, PowerCore III Fusion 5K",
-//     "product_price": "$25.99",
-//     "product_star_rating": "4.6",
-//     "product_num_ratings": 31200,
-//     "product_url": "https://www.amazon.com/dp/B07X94Y16H",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/71h3K750QHL._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Electronics"
-//   },
-//   {
-//     "rank": 17,
-//     "asin": "B09WCTTXQ6",
-//     "product_title": "Apple Watch Series 9 GPS, 41mm Midnight Aluminum",
-//     "product_price": "$399.00",
-//     "product_star_rating": "4.8",
-//     "product_num_ratings": 28543,
-//     "product_url": "https://www.amazon.com/dp/B09WCTTXQ6",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/71R6ivLSfrL._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Electronics"
-//   },
-//   {
-//     "rank": 18,
-//     "asin": "B07Q6B5YL5",
-//     "product_title": "Amazon Fire TV Stick 4K Max",
-//     "product_price": "$59.99",
-//     "product_star_rating": "4.7",
-//     "product_num_ratings": 98123,
-//     "product_url": "https://www.amazon.com/dp/B07Q6B5YL5",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/61BOIz4Tx1L._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Electronics"
-//   },
-//   {
-//     "rank": 19,
-//     "asin": "B0DHYGWYJ6",
-//     "product_title": "Sony WH-1000XM5 Noise Canceling Headphones",
-//     "product_price": "$348.00",
-//     "product_star_rating": "4.6",
-//     "product_num_ratings": 15478,
-//     "product_url": "https://www.amazon.com/dp/B0DHYGWYJ6",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/71UbHaUeeUL._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Electronics"
-//   },
-//   {
-//     "rank": 20,
-//     "asin": "B07P5J2T5G",
-//     "product_title": "JBL Flip 6 Portable Bluetooth Speaker",
-//     "product_price": "$129.95",
-//     "product_star_rating": "4.5",
-//     "product_num_ratings": 56789,
-//     "product_url": "https://www.amazon.com/dp/B07P5J2T5G",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/710l+f5+TNL._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Electronics"
-//   },
-//   {
-//     "rank": 21,
-//     "asin": "B0DGVQMGBB",
-//     "product_title": "Samsung 55-Inch Class QLED 4K Smart TV",
-//     "product_price": "$697.99",
-//     "product_star_rating": "4.6",
-//     "product_num_ratings": 3108,
-//     "product_url": "https://www.amazon.com/dp/B0DGVQMGBB",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/61phY52G-OL._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Electronics"
-//   },
-//   {
-//     "rank": 22,
-//     "asin": "B07K98XDX8",
-//     "product_title": "Logitech C922 Pro Stream Webcam",
-//     "product_price": "$89.99",
-//     "product_star_rating": "4.5",
-//     "product_num_ratings": 49876,
-//     "product_url": "https://www.amazon.com/dp/B07K98XDX8",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/61RKiI+ILuL._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Electronics"
-//   },
-//   {
-//     "rank": 23,
-//     "asin": "B07Q33SJDW",
-//     "product_title": "SanDisk 128GB Ultra USB 3.0 Flash Drive",
-//     "product_price": "$12.99",
-//     "product_star_rating": "4.7",
-//     "product_num_ratings": 215621,
-//     "product_url": "https://www.amazon.com/dp/B07Q33SJDW",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/71dIA+61J2L._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Electronics"
-//   },
-//   {
-//     "rank": 24,
-//     "asin": "B09MYJ1R6L",
-//     "product_title": "TP-Link Kasa Smart Wi-Fi Plug",
-//     "product_price": "$19.99",
-//     "product_star_rating": "4.6",
-//     "product_num_ratings": 56027,
-//     "product_url": "https://www.amazon.com/dp/B09MYJ1R6L",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/61JfosHunyL._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Electronics"
-//   },
-//   {
-//     "rank": 25,
-//     "asin": "B0BB2GF9WW",
-//     "product_title": "Amazon Echo Dot (5th Gen) with clock",
-//     "product_price": "$59.99",
-//     "product_star_rating": "4.7",
-//     "product_num_ratings": 89123,
-//     "product_url": "https://www.amazon.com/dp/B0BB2GF9WW",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/71VUdZ4iJhL._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Electronics"
-//   },
-//   {
-//     "rank": 26,
-//     "asin": "B0CLBV27N2",
-//     "product_title": "Bose QuietComfort Earbuds II",
-//     "product_price": "$279.00",
-//     "product_star_rating": "4.3",
-//     "product_num_ratings": 32158,
-//     "product_url": "https://www.amazon.com/dp/B0CLBV27N2",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/719rCYQpjdL._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Electronics"
-//   },
-//   {
-//     "rank": 27,
-//     "asin": "B076VQ4Y4J",
-//     "product_title": "Samsung Galaxy Tab S9 FE Android Tablet",
-//     "product_price": "$449.99",
-//     "product_star_rating": "4.5",
-//     "product_num_ratings": 8752,
-//     "product_url": "https://www.amazon.com/dp/B076VQ4Y4J",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/71U0TfOBbWL._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Electronics"
-//   },
-//   {
-//     "rank": 28,
-//     "asin": "B0892H1S89",
-//     "product_title": "Sony Alpha a7 IV Full-Frame Mirrorless Camera",
-//     "product_price": "$2498.00",
-//     "product_star_rating": "4.6",
-//     "product_num_ratings": 5604,
-//     "product_url": "https://www.amazon.com/dp/B0892H1S89",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/71gW3J48tEL._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Electronics"
-//   },
-//   {
-//     "rank": 29,
-//     "asin": "B08V2N3Q1S",
-//     "product_title": "Ring Video Doorbell Wired",
-//     "product_price": "$64.99",
-//     "product_star_rating": "4.7",
-//     "product_num_ratings": 41290,
-//     "product_url": "https://www.amazon.com/dp/B08V2N3Q1S",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/61N+4567L._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Electronics"
-//   },
-//   {
-//     "rank": 30,
-//     "asin": "B0823GT5JG",
-//     "product_title": "Nintendo Switch OLED Model",
-//     "product_price": "$349.99",
-//     "product_star_rating": "4.9",
-//     "product_num_ratings": 65432,
-//     "product_url": "https://www.amazon.com/dp/B0823GT5JG",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/61py58y88zL._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Electronics"
-//   },
-//   {
-//     "rank": 31,
-//     "asin": "B0DHYHPSMC",
-//     "product_title": "Kindle Paperwhite (16 GB) – With a 6.8” display",
-//     "product_price": "$149.99",
-//     "product_star_rating": "4.8",
-//     "product_num_ratings": 39856,
-//     "product_url": "https://www.amazon.com/dp/B0DHYHPSMC",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/71b5aAzdXOL._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Electronics"
-//   },
-//   {
-//     "rank": 32,
-//     "asin": "B07S27F9T5",
-//     "product_title": "Microsoft Surface Pro 9 Tablet",
-//     "product_price": "$1099.00",
-//     "product_star_rating": "4.4",
-//     "product_num_ratings": 9802,
-//     "product_url": "https://www.amazon.com/dp/B07S27F9T5",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/71f-0e980TL._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Electronics"
-//   },
-//   {
-//     "rank": 33,
-//     "asin": "B085521C64",
-//     "product_title": "Google Nest Learning Thermostat",
-//     "product_price": "$249.00",
-//     "product_star_rating": "4.5",
-//     "product_num_ratings": 76543,
-//     "product_url": "https://www.amazon.com/dp/B085521C64",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/7123L5678L._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Electronics"
-//   },
-//   {
-//     "rank": 34,
-//     "asin": "B07Q33SJDA",
-//     "product_title": "Crucial MX500 1TB SATA SSD",
-//     "product_price": "$79.99",
-//     "product_star_rating": "4.8",
-//     "product_num_ratings": 123456,
-//     "product_url": "https://www.amazon.com/dp/B07Q33SJDA",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/71dIA+61J2L._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Electronics"
-//   },
-//   {
-//     "rank": 35,
-//     "asin": "B07C3H7M5K",
-//     "product_title": "Fitbit Charge 6 Fitness Tracker",
-//     "product_price": "$159.95",
-//     "product_star_rating": "4.2",
-//     "product_num_ratings": 8900,
-//     "product_url": "https://www.amazon.com/dp/B07C3H7M5K",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/81B-7G4LGL._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Electronics"
-//   },
-//   {
-//     "rank": 36,
-//     "asin": "B08T9N1C4X",
-//     "product_title": "Razer DeathAdder V3 Pro Gaming Mouse",
-//     "product_price": "$129.99",
-//     "product_star_rating": "4.7",
-//     "product_num_ratings": 21500,
-//     "product_url": "https://www.amazon.com/dp/B08T9N1C4X",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/71YvU00U7mL._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Electronics"
-//   }
-// ]
-
-
-// // Data for fashion
-// [
-//   {
-//     "rank": 17,
-//     "asin": "B085XQW42P",
-//     "product_title": "SOJOS Small Polarized Sunglasses for Women",
-//     "product_price": "$14.99",
-//     "product_star_rating": "4.5",
-//     "product_num_ratings": 28456,
-//     "product_url": "https://www.amazon.com/dp/B085XQW42P",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/61f+8hHl4QL._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Fashion"
-//   },
-//   {
-//     "rank": 18,
-//     "asin": "B08T9N1C4X",
-//     "product_title": "Amazon Essentials Women's Lightweight Sweater",
-//     "product_price": "$22.50",
-//     "product_star_rating": "4.2",
-//     "product_num_ratings": 11500,
-//     "product_url": "https://www.amazon.com/dp/B08T9N1C4X",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/71YvU00U7mL._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Fashion"
-//   },
-//   {
-//     "rank": 19,
-//     "asin": "B07KYW742V",
-//     "product_title": "Hanes Men's EcoSmart Fleece Pullover Hoodie",
-//     "product_price": "$17.99",
-//     "product_star_rating": "4.6",
-//     "product_num_ratings": 125678,
-//     "product_url": "https://www.amazon.com/dp/B07KYW742V",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/71iL7Rz8PCL._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Fashion"
-//   },
-//   {
-//     "rank": 20,
-//     "asin": "B09SGP942F",
-//     "product_title": "The Drop Women's Britt Tiered Maxi Tent Dress",
-//     "product_price": "$59.90",
-//     "product_star_rating": "4.1",
-//     "product_num_ratings": 8945,
-//     "product_url": "https://www.amazon.com/dp/B09SGP942F",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/712W12345L._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Fashion"
-//   },
-//   {
-//     "rank": 21,
-//     "asin": "B07V79X8N4",
-//     "product_title": "Adidas Women's Cloudfoam Pure Running Shoe",
-//     "product_price": "$55.99",
-//     "product_star_rating": "4.6",
-//     "product_num_ratings": 11234,
-//     "product_url": "https://www.amazon.com/dp/B07V79X8N4",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/71iJ8K2dEL._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Fashion"
-//   },
-//   {
-//     "rank": 22,
-//     "asin": "B073N83H3L",
-//     "product_title": "Levi's Men's 505 Regular Fit Jeans",
-//     "product_price": "$45.99",
-//     "product_star_rating": "4.5",
-//     "product_num_ratings": 35432,
-//     "product_url": "https://www.amazon.com/dp/B073N83H3L",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/7178Wd1gK1L._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Fashion"
-//   },
-//   {
-//     "rank": 23,
-//     "asin": "B0892H1S89",
-//     "product_title": "Puma Men's T-Shirt with Logo",
-//     "product_price": "$19.99",
-//     "product_star_rating": "4.6",
-//     "product_num_ratings": 45678,
-//     "product_url": "https://www.amazon.com/dp/B0892H1S89",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/71gW3J48tEL._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Fashion"
-//   },
-//   {
-//     "rank": 24,
-//     "asin": "B07S27F9T5",
-//     "product_title": "Nike Women's Sportswear Leggings",
-//     "product_price": "$35.00",
-//     "product_star_rating": "4.5",
-//     "product_num_ratings": 28901,
-//     "product_url": "https://www.amazon.com/dp/B07S27F9T5",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/71f-0e980TL._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Fashion"
-//   },
-//   {
-//     "rank": 25,
-//     "asin": "B07C3H7M5K",
-//     "product_title": "Vera Bradley Women's Signature Cotton Backpack",
-//     "product_price": "$89.99",
-//     "product_star_rating": "4.7",
-//     "product_num_ratings": 15600,
-//     "product_url": "https://www.amazon.com/dp/B07C3H7M5K",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/81B-7G4LGL._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Fashion"
-//   },
-//   {
-//     "rank": 26,
-//     "asin": "B088R5W38K",
-//     "product_title": "Under Armour Men's Tech 2.0 Short Sleeve T-Shirt",
-//     "product_price": "$25.00",
-//     "product_star_rating": "4.8",
-//     "product_num_ratings": 98765,
-//     "product_url": "https://www.amazon.com/dp/B088R5W38K",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/61XkL9h04QL._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Fashion"
-//   },
-//   {
-//     "rank": 27,
-//     "asin": "B07P5J2T5G",
-//     "product_title": "Crocs Women's Classic Clogs",
-//     "product_price": "$49.99",
-//     "product_star_rating": "4.4",
-//     "product_num_ratings": 150245,
-//     "product_url": "https://www.amazon.com/dp/B07P5J2T5G",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/710l+f5+TNL._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Fashion"
-//   },
-//   {
-//     "rank": 28,
-//     "asin": "B07N14N2N2",
-//     "product_title": "Columbia Men's PFG Bahama II Short Sleeve Shirt",
-//     "product_price": "$39.99",
-//     "product_star_rating": "4.8",
-//     "product_num_ratings": 89452,
-//     "product_url": "https://www.amazon.com/dp/B07N14N2N2",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/61sJ8sH+g9L._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Fashion"
-//   },
-//   {
-//     "rank": 29,
-//     "asin": "B08V2N3Q1S",
-//     "product_title": "Calvin Klein Women's Modern Cotton Bralette",
-//     "product_price": "$28.00",
-//     "product_star_rating": "4.6",
-//     "product_num_ratings": 34567,
-//     "product_url": "https://www.amazon.com/dp/B08V2N3Q1S",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/61N+4567L._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Fashion"
-//   },
-//   {
-//     "rank": 30,
-//     "asin": "B09J33F4R8",
-//     "product_title": "Champion Men's Powerblend Fleece Pullover Hoodie",
-//     "product_price": "$42.50",
-//     "product_star_rating": "4.4",
-//     "product_num_ratings": 15689,
-//     "product_url": "https://www.amazon.com/dp/B09J33F4R8",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/71J4-p3-VGL._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Fashion"
-//   },
-//   {
-//     "rank": 31,
-//     "asin": "B01N6W5T2F",
-//     "product_title": "Timex Women's Easy Reader Watch",
-//     "product_price": "$38.99",
-//     "product_star_rating": "4.5",
-//     "product_num_ratings": 45123,
-//     "product_url": "https://www.amazon.com/dp/B01N6W5T2F",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/71rJ4T1kRGL._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Fashion"
-//   },
-//   {
-//     "rank": 32,
-//     "asin": "B0B8Y18C6T",
-//     "product_title": "New Balance Men's 608 V5 Cross Trainer",
-//     "product_price": "$69.99",
-//     "product_star_rating": "4.8",
-//     "product_num_ratings": 152841,
-//     "product_url": "https://www.amazon.com/dp/B0B8Y18C6T",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/61f1sL7bLgL._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Fashion"
-//   },
-//   {
-//     "rank": 33,
-//     "asin": "B07CYFFH4H",
-//     "product_title": "Carhartt Men's K87 Workwear Pocket T-Shirt",
-//     "product_price": "$19.99",
-//     "product_star_rating": "4.6",
-//     "product_num_ratings": 56789,
-//     "product_url": "https://www.amazon.com/dp/B07CYFFH4H",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/71U0TfOBbWL._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Fashion"
-//   },
-//   {
-//     "rank": 34,
-//     "asin": "B0892G1S8L",
-//     "product_title": "Columbia Women's Arcadia II Jacket",
-//     "product_price": "$65.00",
-//     "product_star_rating": "4.4",
-//     "product_num_ratings": 32100,
-//     "product_url": "https://www.amazon.com/dp/B0892G1S8L",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/71gW3J48tEL._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Fashion"
-//   },
-//   {
-//     "rank": 35,
-//     "asin": "B09WCTTXQ6",
-//     "product_title": "Tommy Hilfiger Men's Classic Polo Shirt",
-//     "product_price": "$34.50",
-//     "product_star_rating": "4.3",
-//     "product_num_ratings": 21000,
-//     "product_url": "https://www.amazon.com/dp/B09WCTTXQ6",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/61R6ivLSfrL._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Fashion"
-//   },
-//   {
-//     "rank": 36,
-//     "asin": "B07K98XDX8",
-//     "product_title": "Skechers Women's Go Walk Joy Sneaker",
-//     "product_price": "$49.99",
-//     "product_star_rating": "4.7",
-//     "product_num_ratings": 58610,
-//     "product_url": "https://www.amazon.com/dp/B07K98XDX8",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/61RKiI+ILuL._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Fashion"
-//   },
-//   {
-//     "rank": 37,
-//     "asin": "B0DHYGWYJ6",
-//     "product_title": "Dickies Men's Short-Sleeve Work Shirt",
-//     "product_price": "$24.99",
-//     "product_star_rating": "4.4",
-//     "product_num_ratings": 13583,
-//     "product_url": "https://www.amazon.com/dp/B0DHYGWYJ6",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/71UbHaUeeUL._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Fashion"
-//   },
-//   {
-//     "rank": 38,
-//     "asin": "B0DGVQMGBB",
-//     "product_title": "Champion Women's Fleece Jogger Sweatpants",
-//     "product_price": "$38.00",
-//     "product_star_rating": "4.5",
-//     "product_num_ratings": 11080,
-//     "product_url": "https://www.amazon.com/dp/B0DGVQMGBB",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/61phY52G-OL._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Fashion"
-//   },
-//   {
-//     "rank": 39,
-//     "asin": "B0823GT5JG",
-//     "product_title": "Dockers Men's Classic Fit Flat Front Pants",
-//     "product_price": "$35.99",
-//     "product_star_rating": "4.2",
-//     "product_num_ratings": 6160,
-//     "product_url": "https://www.amazon.com/dp/B0823GT5JG",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/61py58y88zL._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Fashion"
-//   },
-//   {
-//     "rank": 40,
-//     "asin": "B0CLBV27N2",
-//     "product_title": "Fossil Women's Kinsey Three-Hand Watch",
-//     "product_price": "$79.99",
-//     "product_star_rating": "4.4",
-//     "product_num_ratings": 16338,
-//     "product_url": "https://www.amazon.com/dp/B0CLBV27N2",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/719rCYQpjdL._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Fashion"
-//   },
-//   {
-//     "rank": 41,
-//     "asin": "B09MYJ1R6L",
-//     "product_title": "Champion Men's Jersey Short with Pockets",
-//     "product_price": "$15.99",
-//     "product_star_rating": "4.7",
-//     "product_num_ratings": 20270,
-//     "product_url": "https://www.amazon.com/dp/B09MYJ1R6L",
-//     "product_photo": "https://images-na.ssl-images-amazon.com/images/I/61JfosHunyL._AC_UL900_SR900,600_.jpg",
-//     "rank_change_label": null,
-//     "product_category": "Fashion"
-//   }
-// ]
+export { dealProducts, bestSellers, store };

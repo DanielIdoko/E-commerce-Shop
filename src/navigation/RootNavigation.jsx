@@ -26,8 +26,8 @@ const RootNavigation = () => {
         <Route path="/deals" element={<Deals />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/products" element={<Products />} />
-        <Route path="/products/:id" element={<ProductDetail />} />
-        <Route path="/search" element={<Search />} />
+        <Route path="/product/:asin" element={<ProductDetail />} />
+        <Route path="/search/:term" element={<Search />} />
       </Route>
     )
   );
