@@ -7,11 +7,10 @@ import {
 } from "react-router-dom";
 import Spinner from "../components/common/Loader/Spinner";
 
-// Lazy load every page we have in the application to avoid unneccessary downloads of pages
+// Lazy load every page we have in the application to avoid downloading pages files at once
 const Home = lazy(() => import("../pages/Home"));
 const Layout = lazy(() => import("../pages/Layout"));
 const About = lazy(() => import("../pages/About"));
-const Deals = lazy(() => import("../pages/Deals"));
 const ProductDetail = lazy(() => import("../pages/ProductDetail"));
 const Products = lazy(() => import("../pages/Products"));
 const Cart = lazy(() => import("../pages/Cart"));
@@ -23,11 +22,11 @@ const RootNavigation = () => {
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/deals" element={<Deals />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/products" element={<Products />} />
-        <Route path="/product/:asin" element={<ProductDetail />} />
+        <Route path="/products/:asin" element={<ProductDetail />} />
         <Route path="/search/:term" element={<Search />} />
+        <Route path="/search/" element={<Search />} />
       </Route>
     )
   );

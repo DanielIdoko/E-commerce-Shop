@@ -20,8 +20,9 @@
   /* Color themes */
   --color-base: #f1f1f1;
   --color-primary: #ffd620;
+  --color-primary-lighter: #ffd62060;
   --color-secondary: #359442;
-  --color-accent: #0b0b0b;
+  --color-accent: #121212;
   /* font size themes */
   --text-x-small-size: 12px;
   --text-small-size: 15px;
@@ -63,18 +64,36 @@ body {
   @apply text-small-size md:text-large-size font-f-family-2 pb-2 pl-2 md:pl-10;
 }
 
+/* Add item to cart button here */
+.add-to-cart-btn {
+  @apply bg-primary text-medium-size text-accent font-f-family-1 flex items-center justify-center gap-1 p-2 w-fit rounded-full cursor-pointer transition duration-300 ease-in;
+}
+.add-to-cart-btn p {
+  @apply text-x-small-size px-1 hidden;
+}
+.add-to-cart-btn:hover p {
+  @apply flex text-accent text-x-small-size;
+}
+.add-to-cart-btn-2 {
+  @apply w-full md:w-fit p-2 bg-primary border-1 border-yellow-300/10 text-accent rounded-xl text-small-size hover:bg-yellow-400 cursor-pointer transition duration-300 ease-in;
+}
+.buy-now-btn {
+  @apply bg-primary-lighter border-1 border-primary-lighter text-small-size text-accent font-f-family-1 flex items-center justify-center p-1 pl-2 pr-2 md:p-2 md:pl-3 md:pr-3 w-full lg:w-fit rounded-xl cursor-pointer;
+}
+
+/* Heading text */
 .heading {
-  @apply text-small-size md:text-x-medium-size font-f-family-1 pt-10 p-3;
+  @apply text-small-size md:text-medium-size font-f-family-1 pt-10 p-3;
 }
 /* Navigations */
 .navbar {
   @apply w-full h-20 bg-gray-100 md:bg-white flex items-center justify-around md:gap-3 lg:gap-6 overflow-hidden fixed top-0 left-0 z-50;
 }
 .navbar .navbar-navlink {
-  @apply text-small-size font-f-family-2 text-accent transition duration-150 ease-in cursor-pointer hover:text-gray-700;
+  @apply text-small-size font-f-family-2 text-accent transition duration-150 ease-in cursor-pointer rounded-full px-3 py-1;
 }
 .bottom-navigation {
-  @apply w-full h-16 bg-gray-100 fixed bottom-0 left-0 md:hidden z-50;
+  @apply w-full h-16 bg-gray-100 fixed bottom-0 left-0 md:hidden z-90;
 }
 .bottom-navigation nav {
   @apply w-full h-full p-2 flex items-center justify-center gap-15;
@@ -105,19 +124,19 @@ body {
 }
 /* Hero */
 .hero-section {
-  @apply w-full h-full md:p-5 mt-20 flex items-center flex-col md:flex-row;
+  @apply w-full h-screen md:h-full md:p-5 mt-5 md:mt-20 flex items-center justify-center flex-col md:flex-row;
 }
 .hero-section .hero-text-box {
-  @apply w-full md:w-[50%] p-0 md:p-3;
+  @apply w-full h-full md:w-[50%] px-1 md:p-3 flex flex-col justify-center;
 }
 .hero-text-box h1 {
-  @apply text-2xl md:text-6xl lg:text-8xl p-2 pb-1 md:pb-5 text-accent font-bold font-f-family-2;
+  @apply text-7xl md:text-6xl lg:text-8xl p-2 pb-1 md:pb-5 text-accent font-bold font-f-family-2;
 }
 .hero-text-box p {
-  @apply text-small-size p-2 pb-2 md:pb-5 md:pl-4 text-gray-700 font-f-family-2;
+  @apply text-small-size p-3 py-5 md:pb-5 md:pl-4 text-gray-800 font-f-family-2;
 }
 .hero-section .hero-image-container {
-  @apply w-[50%] h-full md:flex;
+  @apply hidden md:visible w-[50%] h-full md:flex;
 }
 /* Categories */
 .categories-section {
@@ -174,7 +193,7 @@ body {
   @apply text-x-small-size md:text-medium-size text-gray-700 font-bold pt-1 pb-1 md:p-2 font-f-family-2;
 }
 .quick-info-section .text-container button {
-  @apply text-x-small-size md:text-small-size md:m-1 font-f-family-2 bg-primary p-2 pl-2 pr-2 md:p-3 md:pl-2 md:pr-2 flex items-center justify-center gap-2 rounded-3xl text-accent font-bold cursor-pointer;
+  @apply text-x-small-size md:text-small-size md:m-1 my-1 bg-primary text-accent  font-f-family-2 p-2 flex items-center justify-center gap-2 rounded-xl transition duration-400 ease-in cursor-pointer;
 }
 /* Services/FAQs section */
 .services {
@@ -198,6 +217,7 @@ body {
 .services .service .img-container img {
   @apply w-full h-full object-cover;
 }
+
 /* utils */
 /* .home-category img {
   transform: scale(1);
@@ -208,21 +228,6 @@ img {
 }
 img:hover {
   transform: scale(1.1);
-}
-
-.hero-cta-btn {
-  animation: ctabounce 1s infinite alternate;
-}
-.learn-more-cta {
-  animation: ctabounce 1s infinite alternate;
-}
-@keyframes ctabounce {
-  0% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(10px);
-  }
 }
 
 /* Spinner styles */
@@ -272,7 +277,7 @@ img:hover {
 /* Swiper css styles */
 .swiper-button-prev,
 .swiper-button-next {
-  color: red; /* Change arrow color */
+  color: rgb(15, 151, 83); /* Change arrow color */
   font-size: 30px; /* Change arrow size */
   background-color: rgba(
     255,
@@ -282,7 +287,7 @@ img:hover {
   ); /* Add a semi-transparent background */
   border-radius: 50%; /* Make them circular */
   padding: 10px; /* Add padding */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .swiper-button-prev:hover,
@@ -293,4 +298,13 @@ img:hover {
 .swiper-button-disabled {
   opacity: 0.5; /* Reduce opacity when disabled */
   cursor: not-allowed;
+}
+
+/* Breadcrumbs here */
+.breadcrumb-text {
+  @apply text-small-size font-f-family-2;
+}
+
+.action-btn {
+  @apply text-x-small-size md:text-small-size w-fit rounded-full text-accent font-f-family-2 my-4 p-1 px-2 flex items-center justify-center gap-2 hover:bg-yellow-200 transition duration-200 ease-in;
 }

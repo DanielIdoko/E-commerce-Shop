@@ -1,12 +1,13 @@
 import React from "react";
 import { Link } from 'react-router-dom'
+import CustomButton from "./common/CustomButton";
 const SearchProduct = ({ item }) => {
   return (
     <li
       className="w-40 h-88 md:w-55 lg:w-80 rounded-md bg-none relative hover:shadow-sm hover:shadow-gray-300 transition duration-300 ease-in cursor-pointer"
       key={item.product_asin}
       >
-      <Link to={`/product/${item.product_asin}`} state={{item}}>
+      <Link to={`/products/${item.product_asin}`} state={{item}}>
         <img
           src={item.product_photo}
           alt={item.product_title + " image"}
@@ -32,9 +33,7 @@ const SearchProduct = ({ item }) => {
             </span>
           </div>
         </div>
-        <button className="bg-primary text-accent flex items-center justify-center p-1 pl-2 pr-2 md:p-2 md:pl-3 md:pr-3 w-full lg:w-fit rounded-full mt-5 ml-2 md:ml-3 cursor-pointer transition duration-150 ease-in">
-          Add to Cart
-        </button>
+        <CustomButton />
       </Link>
     </li>
   );

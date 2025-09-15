@@ -1,4 +1,4 @@
-import React, { Suspense, useEffect, useState } from "react";
+import React, { lazy, Suspense, useEffect, useState } from "react";
 // import Swiper core and required modules
 import {
   Navigation,
@@ -27,40 +27,10 @@ import {
 } from "../data/common";
 import { heroImage, cards, faq1, faq2, faq3 } from "../assets/images";
 import Footer from "../components/common/Footer";
-import { AiOutlineArrowRight } from "react-icons/ai";
-
-// Deal component
-const Deal = ({ deal }) => {
-  return (
-     <Link to={`/product/${deal.deal_asin}`} state={{ deal }} className="w-40 h-88 md:w-55 lg:w-90 rounded-md p-1.5 relative cursor-pointer transition duration-200 ease-in">
-      <img
-        src={deal.deal_photo}
-        alt={deal.deal_title}
-        className="w-full h-42 pb-1 object-contain"
-      />
-      <span className="text-x-small-size text-accent w-13 bg-orange-200 p-1 rounded-md absolute top-3 left-1">
-        {deal.deal_badge ? deal.deal_badge : "10% off"}
-      </span>
-      {/* Text container */}
-      <div className="w-full h-fit pt-2">
-        <h3 className="text-medium-size text-accent font-f-family-2 font-bold">
-          {deal.deal_title.length > 15
-            ? deal.deal_title.slice(0, 16) + "..."
-            : deal.deal_title}
-        </h3>
-        <p className="text-small-size text-gray-500">
-          {deal.deal_price.amount + deal.deal_price.currency}
-        </p>
-        <span className="text-x-small-size text-green-600 ">
-          {deal.deal_state ? deal.deal_state : "OUT OF STOCK"}
-        </span>
-      </div>
-      <button className="bg-primary text-accent  flex items-center justify-center p-1 pl-2 pr-2 md:p-2 md:px-3 w-full lg:w-fit rounded-full mt-3 cursor-pointer transition duration-150 ease-in">
-        Add to Cart
-      </button>
-    </Link>
-  );
-};
+import { AiOutlineArrowRight, AiOutlineShopping } from "react-icons/ai";
+import CustomButton from "../components/common/CustomButton";
+// Bring in Deal component
+const Deal = lazy(() => import("../components/Deal"));
 
 // Category component
 const Category = ({ categoryData }) => {
@@ -98,7 +68,7 @@ const Discount = ({ discount_data }) => {
   return (
     <div className="w-44 h-70 md:w-50 md:h-70 lg:w-2xs lg:h-86 p-0 md:p-0 rounded-xl bg-gray-50 cursor-pointer overflow-hidden">
       <div className="h-[40%] w-full p-2">
-        <p className="text-small-size text-red-600 md:text-small-size font-bold font-f-family-2">
+        <p className="text-small-size text-primary md:text-small-size font-bold font-f-family-2">
           Save
         </p>
         <p className="text-medium-size md:text-x-medium-size font-bold text-accent pl-1 pt-1">
@@ -154,8 +124,8 @@ const Home = () => {
             We're building the future of retail, one order at a time.
           </p>
           <Link
-            to="/product"
-            className="hero-cta-btn bg-primary text-accent flex items-center justify-center gap-2 p-2 px-2 md:p-2 md:px-3.5 w-fit rounded-full mt-5 ml-2 md:ml-3 cursor-pointer transition duration-150 ease-in"
+            to="/products"
+            className="hero-cta-btn bg-primary text-accent flex items-center justify-center gap-2 p-2 px-2 md:p-2 md:px-3.5 w-fit rounded-xl mt-1 ml-2 md:ml-3 hover:bg-yellow-300 cursor-pointer transition duration-150 ease-in"
           >
             Shop Now <AiOutlineArrowRight />
           </Link>
@@ -226,6 +196,7 @@ const Home = () => {
         </div>
       </section>
       {/* End of discount section */}
+
       {/* Best sellers section */}
       <h3 className="sub-heading">Best Sellers</h3>
       <section className="best-sellers-section">
@@ -248,11 +219,11 @@ const Home = () => {
           ))}
         </nav>
 
-        {/* main content */}
+        {/* more products section */}
         <div className="w-full h-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 pt-10">
           {filterData.map((Fdata) => (
             <Link
-              to={`/product/${Fdata.product_asin}`}
+              to={`/products/${Fdata.product_asin}`}
               state={{ Fdata }}
               className="w-40 h-88 md:w-55 lg:w-80 rounded-md bg-none relative hover:shadow-sm hover:shadow-gray-300 transition duration-300 ease-in cursor-pointer"
               key={Fdata.product_asin}
@@ -285,10 +256,8 @@ const Home = () => {
                     ({Fdata.product_num_ratings})
                   </span>
                 </div>
+               <CustomButton />
               </div>
-              <button className="bg-primary text-accent flex items-center justify-center p-1 pl-2 pr-2 md:p-2 md:pl-3 md:pr-3 w-full lg:w-fit rounded-full mt-5 ml-2 md:ml-3 cursor-pointer transition duration-150 ease-in">
-                Add to Cart
-              </button>
             </Link>
           ))}
         </div>
@@ -308,6 +277,7 @@ const Home = () => {
         </div>
       </section>
       {/* End of quick info section */}
+
       {/* Services/FAQs */}
       <h5 className="sub-heading">Services to help you Shop Better</h5>
       <section className="services">
