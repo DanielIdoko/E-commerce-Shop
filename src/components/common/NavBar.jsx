@@ -35,7 +35,7 @@ const NavBar = () => {
         <img
           src={logo}
           alt="Logo image"
-          className="w-10 h-10 md:w-13 lg:w-10 rounded-full"
+          className="w-10 h-10 lg:w-10 md:mx-7 rounded-full"
         />
       </Link>
 
@@ -44,8 +44,8 @@ const NavBar = () => {
           to="/"
           className="navbar-navlink"
           style={({ isActive }) => ({
-            color: isActive ? "#fff" : "#555",
-            backgroundColor: isActive && "#ffd620"
+            color: isActive ? "#121212" : "#a9a9a9",
+            // backgroundColor: isActive && "#ffd620"
           })}
           >
           Home
@@ -54,8 +54,8 @@ const NavBar = () => {
           to="/products"
           className="navbar-navlink"
           style={({ isActive }) => ({
-            color: isActive ? "#fff" : "#555",
-            backgroundColor: isActive && "#ffd620"
+            color: isActive ? "#121212" : "#a9a9a9"
+            // backgroundColor: isActive && "#ffd620"
           })}
         >
           Store
@@ -73,7 +73,8 @@ const NavBar = () => {
         />
         <FiSearch className="text-x-medium-size p-1 text-accent relative right-8 md:right-0 lg:right-8 cursor-pointer rounded-full hover:text-gray-800 hover:bg-black/10 transition duration-300 ease-in-out" onClick={handleSearch}/>
       </form>
-      <div className="hidden md:flex items-center justify-center w-fit h-full md:mr-10 lg:mr-0">
+      {/*  */}
+      <div className="hidden md:flex items-center justify-center w-fit h-full md:mx-6 lg:mx-10">
         <Link
           to="/cart"
           className="text-small-size md:text-medium-size flex items-center justify-center gap-2 cursor-pointer hover:text-gray-700"

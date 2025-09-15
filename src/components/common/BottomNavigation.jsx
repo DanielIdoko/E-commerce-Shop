@@ -42,7 +42,7 @@ const BottomNavigation = () => {
             key={Math.random()}
             className="nav-link"
             style={({ isActive }) => ({
-              color: isActive ? "#DD8B26" : "#555",
+              color: isActive ? "#121212" : "#a9a9a9",
             })}
           >
             {tab.icon}

@@ -1,13 +1,14 @@
-import React, { useMemo } from "react";
+import React, { lazy, useMemo } from "react";
 import { Link, useParams } from "react-router-dom";
 import { store } from "../data/products";
-import SearchProduct from "../components/SearchProduct";
 import useSearchStore from "../store/SearchStore";
-import Spinner from "../components/common/Loader/Spinner";
-import Footer from "../components/common/Footer";
 import { binoculars } from "../assets/images";
-import Recommended from "../components/Recommended";
-import { BiArrowFromLeft } from "react-icons/bi";
+import { FiArrowRight } from "react-icons/fi";
+// Lazy imports
+const Footer = lazy(() => import("../components/common/Footer"));
+const Spinner = lazy(() => import("../components/common/Loader/Spinner"));
+  const SearchProduct = lazy(() => import("../components/SearchProduct"));
+const Recommended = lazy(() => import("../components/Recommended"));
 
 const Search = () => {
   const { term } = useParams();
@@ -26,15 +27,13 @@ const Search = () => {
   return (
     <div className="w-full h-full p-3 md:p-10 mt-20">
       {/* BreadCrumbs */}
-      <span className="py-6 flex items-center gap-3">
-        <Link to="/" className="breadcrumb-text">
-          Home
-        </Link>{" "}
-        {" > "}{" "}
-        <Link to="/search" className="breadcrumb-text">
-          search
+      <span className="py-6 px-3 flex items-center gap-3">
+        <Link to="/" className="text-gray-600 breadcrumb-text">
+          Home {" / "}
         </Link>
-        {" > "}
+        <Link to="/search" className="text-gray-600 breadcrumb-text">
+          search {" / "}
+        </Link>
         <Link to={`/search/${term}`} className="breadcrumb-text">
           {term}
         </Link>
@@ -78,7 +77,7 @@ const Search = () => {
             </div>
           ) : (
             <p className="text-accent text-small-size md:text-medium-size font-bold pb-3 font-f-family-2">
-              Search for Something
+              Search for Products, keywords or tags.
             </p>
           )}
         </div>
@@ -90,9 +89,9 @@ const Search = () => {
           <Recommended />
           <Link
             to={`/products`}
-            className="text-accent text-x-small-size md:text-small-size flex items-center gap-2 px-3 hover:underline"
+              className="mx-5 action-btn"
           >
-            See More <BiArrowFromLeft />
+            View More <FiArrowRight />
           </Link>
         </>
       )}

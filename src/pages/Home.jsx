@@ -27,10 +27,10 @@ import {
 } from "../data/common";
 import { heroImage, cards, faq1, faq2, faq3 } from "../assets/images";
 import Footer from "../components/common/Footer";
-import { AiOutlineArrowRight } from "react-icons/ai";
+import { AiOutlineArrowRight, AiOutlineShopping } from "react-icons/ai";
+import CustomButton from "../components/common/CustomButton";
 // Bring in Deal component
-const Deal = lazy(() => import('../components/Deal'))
-
+const Deal = lazy(() => import("../components/Deal"));
 
 // Category component
 const Category = ({ categoryData }) => {
@@ -125,7 +125,7 @@ const Home = () => {
           </p>
           <Link
             to="/products"
-            className="hero-cta-btn bg-primary text-accent flex items-center justify-center gap-2 p-2 px-2 md:p-2 md:px-3.5 w-fit rounded-full mt-5 ml-2 md:ml-3 cursor-pointer transition duration-150 ease-in"
+            className="hero-cta-btn bg-primary text-accent flex items-center justify-center gap-2 p-2 px-2 md:p-2 md:px-3.5 w-fit rounded-xl mt-1 ml-2 md:ml-3 hover:bg-yellow-300 cursor-pointer transition duration-150 ease-in"
           >
             Shop Now <AiOutlineArrowRight />
           </Link>
@@ -256,10 +256,8 @@ const Home = () => {
                     ({Fdata.product_num_ratings})
                   </span>
                 </div>
+               <CustomButton />
               </div>
-              <button className="mt-4 ml-2 md:ml-3 add-to-cart-btn">
-                Add to Cart
-              </button>
             </Link>
           ))}
         </div>
@@ -279,7 +277,7 @@ const Home = () => {
         </div>
       </section>
       {/* End of quick info section */}
-      
+
       {/* Services/FAQs */}
       <h5 className="sub-heading">Services to help you Shop Better</h5>
       <section className="services">

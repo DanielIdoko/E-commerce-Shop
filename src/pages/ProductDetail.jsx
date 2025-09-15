@@ -27,30 +27,34 @@ const ProductDetail = () => {
   return (
     <div className="mt-20 w-full h-full md:p-10 bg-white">
       {/* BreadCrumbs */}
-      <span className="px-6 py-6 md:px-2 flex items-center gap-3">
-        <Link to="/" className="breadcrumb-text">
-          Home
+      <span className="px-6 py-6 md:px-2 flex items-center justify-start gap-3">
+        <Link to="/" className="breadcrumb-text text-gray-600">
+          Home {" / "}
         </Link>{" "}
-        {" > "}{" "}
-        <Link to="/products" className="breadcrumb-text">
-          products
+        <Link to="/products" className="breadcrumb-text text-gray-600">
+          products {" / "}
         </Link>
-        {" > "}
-        <Link to={`/product/${asin}`} className="breadcrumb-text">
-          {product.product_title || product.deal_title.slice(0, 19) + "..."}
+        <Link to={`/products/${asin}`} className="breadcrumb-text">
+          {product.product_title?.slice(0, 25) + "..." ||
+            product.deal_title.slice(0, 10) + "..."}
         </Link>
       </span>
+      <Link to={`/`} className="mx-5 action-btn">
+        <FiArrowLeft /> Back to store
+      </Link>
       {/* Breadcrumbs ends */}
 
       {/* Product Description main data */}
-      <div className="w-full h-full p-3 flex flex-col md:flex-row justify-start gap-3">
-        <div className="md:w-[50%] h-full overflow-hidden relative">
+      <div className="w-full h-full p-3 flex flex-col md:flex-row justify-start gap-3 mt-10">
+        <div className="md:w-[50%] h-full overflow-hidden relative flex items-center justify-center">
           <img
-            className="w-full h-full cursor-pointer"
+            className="h-[420px] cursor-pointer object-cover"
             src={product.deal_photo || product.product_photo}
             alt={product.product_title || product.deal_title}
           />
-          <span className="absolute top-10 right-10 text-x-small-size text-accent w-13 bg-primary-lighter p-1 rounded-md">{product.deal_badge}</span>
+          <span className="absolute top-10 right-10 text-x-small-size text-accent w-13 bg-primary-lighter p-1 rounded-md">
+            {product.deal_badge}
+          </span>
         </div>
 
         {/* Text section for product details */}
@@ -81,21 +85,23 @@ const ProductDetail = () => {
 
           {/* price here */}
           <p className="text-medium-size md:text-large-size font-f-family-1 text-accent py-3">
-              {product.product_price || "$" + product.deal_price.amount}
+            {product.product_price || "$" + product.deal_price.amount}
           </p>
 
           {/* Rating here */}
-          <span className="w-full h-fit flex items-center justify-start gap-1 py-3">
-            <AiFillStar className="text-yellow-500" />
-            <p className="text-small-size font-f-family-1">
-              {" "}
-              {product.product_star_rating} ({product.product_num_ratings}{" "}
-              ratings)
-            </p>
-          </span>
+          {!product.deal_title && (
+            <span className="w-full h-fit flex items-center justify-start gap-1 py-3">
+              <AiFillStar className="text-yellow-500" />
+              <p className="text-small-size font-f-family-1">
+                {" "}
+                {product.product_star_rating} ({product.product_num_ratings}{" "}
+                ratings)
+              </p>
+            </span>
+          )}
 
           <div className="w-full h-fit px-1 flex flex-col md:flex-row items-center gap-2">
-            <button className="add-to-cart-btn">Add to Cart</button>
+            <button className="add-to-cart-btn-2">Add to Cart</button>
             <button className="buy-now-btn">Buy Now</button>
             {/* {product.deal_url && (
               <Link to={product.deal_url} target="_blank">
@@ -105,15 +111,9 @@ const ProductDetail = () => {
           </div>
         </div>
       </div>
-      <Link
-        to={`/`}
-        className="text-x-small-size md:text-small-size text-accent font-f-family-2 mx-5 my-4 flex items-center gap-2"
-      >
-        <FiArrowLeft /> Back
-      </Link>
 
       {/* Similar products */}
-      
+
       {/* Similar products ends*/}
     </div>
   );

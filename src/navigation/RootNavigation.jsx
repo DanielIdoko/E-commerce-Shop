@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 import Spinner from "../components/common/Loader/Spinner";
 
-// Lazy load every page we have in the application to avoid unneccessary downloads of pages
+// Lazy load every page we have in the application to avoid downloading pages files at once
 const Home = lazy(() => import("../pages/Home"));
 const Layout = lazy(() => import("../pages/Layout"));
 const About = lazy(() => import("../pages/About"));

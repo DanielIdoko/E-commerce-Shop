@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Similar = () => {
+const SimilarProducts = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const Similar = () => {
   )
 }
 
-export default Similar
+export default SimilarProducts
